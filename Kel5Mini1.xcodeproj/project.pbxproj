@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		157EB61529EFA79F0056F675 /* Kel5Mini1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EB61429EFA79F0056F675 /* Kel5Mini1App.swift */; };
-		157EB61729EFA79F0056F675 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EB61629EFA79F0056F675 /* ContentView.swift */; };
+		157EB61729EFA79F0056F675 /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EB61629EFA79F0056F675 /* Homepage.swift */; };
 		157EB61929EFA7A00056F675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157EB61829EFA7A00056F675 /* Assets.xcassets */; };
 		157EB61C29EFA7A00056F675 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157EB61B29EFA7A00056F675 /* Preview Assets.xcassets */; };
 		157EB61E29EFA7A00056F675 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EB61D29EFA7A00056F675 /* Persistence.swift */; };
@@ -16,6 +16,10 @@
 		157EB62B29EFA7A00056F675 /* Kel5Mini1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EB62A29EFA7A00056F675 /* Kel5Mini1Tests.swift */; };
 		157EB63529EFA7A00056F675 /* Kel5Mini1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EB63429EFA7A00056F675 /* Kel5Mini1UITests.swift */; };
 		157EB63729EFA7A00056F675 /* Kel5Mini1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EB63629EFA7A00056F675 /* Kel5Mini1UITestsLaunchTests.swift */; };
+		15BF953829F2E70F00CA517E /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF953729F2E70F00CA517E /* AppColor.swift */; };
+		15BF953B29F2F80900CA517E /* Homepage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF953A29F2F80900CA517E /* Homepage1.swift */; };
+		15BF953D29F31AF900CA517E /* Homepage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF953C29F31AF900CA517E /* Homepage2.swift */; };
+		15BF953F29F333F700CA517E /* Homepage3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF953E29F333F700CA517E /* Homepage3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +42,7 @@
 /* Begin PBXFileReference section */
 		157EB61129EFA79F0056F675 /* Kel5Mini1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kel5Mini1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		157EB61429EFA79F0056F675 /* Kel5Mini1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kel5Mini1App.swift; sourceTree = "<group>"; };
-		157EB61629EFA79F0056F675 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		157EB61629EFA79F0056F675 /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
 		157EB61829EFA7A00056F675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		157EB61B29EFA7A00056F675 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		157EB61D29EFA7A00056F675 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -48,6 +52,10 @@
 		157EB63029EFA7A00056F675 /* Kel5Mini1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kel5Mini1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		157EB63429EFA7A00056F675 /* Kel5Mini1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kel5Mini1UITests.swift; sourceTree = "<group>"; };
 		157EB63629EFA7A00056F675 /* Kel5Mini1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kel5Mini1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		15BF953729F2E70F00CA517E /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
+		15BF953A29F2F80900CA517E /* Homepage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage1.swift; sourceTree = "<group>"; };
+		15BF953C29F31AF900CA517E /* Homepage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage2.swift; sourceTree = "<group>"; };
+		15BF953E29F333F700CA517E /* Homepage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +106,8 @@
 		157EB61329EFA79F0056F675 /* Kel5Mini1 */ = {
 			isa = PBXGroup;
 			children = (
-				157EB61429EFA79F0056F675 /* Kel5Mini1App.swift */,
-				157EB61629EFA79F0056F675 /* ContentView.swift */,
+				15BF953229F2E68700CA517E /* Application */,
+				15BF953329F2E69800CA517E /* Themes */,
 				157EB61829EFA7A00056F675 /* Assets.xcassets */,
 				157EB61D29EFA7A00056F675 /* Persistence.swift */,
 				157EB61F29EFA7A00056F675 /* Kel5Mini1.xcdatamodeld */,
@@ -131,6 +139,58 @@
 				157EB63629EFA7A00056F675 /* Kel5Mini1UITestsLaunchTests.swift */,
 			);
 			path = Kel5Mini1UITests;
+			sourceTree = "<group>";
+		};
+		15BF953229F2E68700CA517E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				157EB61429EFA79F0056F675 /* Kel5Mini1App.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		15BF953329F2E69800CA517E /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				15BF953629F2E70400CA517E /* Colors */,
+				15BF953429F2E6AC00CA517E /* Presenters */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		15BF953429F2E6AC00CA517E /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				15BF953529F2E6B600CA517E /* Views */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		15BF953529F2E6B600CA517E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				157EB61629EFA79F0056F675 /* Homepage.swift */,
+				15BF953929F2F73900CA517E /* Homepage v.2 */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		15BF953629F2E70400CA517E /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				15BF953729F2E70F00CA517E /* AppColor.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		15BF953929F2F73900CA517E /* Homepage v.2 */ = {
+			isa = PBXGroup;
+			children = (
+				15BF953A29F2F80900CA517E /* Homepage1.swift */,
+				15BF953C29F31AF900CA517E /* Homepage2.swift */,
+				15BF953E29F333F700CA517E /* Homepage3.swift */,
+			);
+			path = "Homepage v.2";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,9 +324,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				157EB61E29EFA7A00056F675 /* Persistence.swift in Sources */,
+				15BF953D29F31AF900CA517E /* Homepage2.swift in Sources */,
+				15BF953829F2E70F00CA517E /* AppColor.swift in Sources */,
 				157EB62129EFA7A00056F675 /* Kel5Mini1.xcdatamodeld in Sources */,
-				157EB61729EFA79F0056F675 /* ContentView.swift in Sources */,
+				15BF953F29F333F700CA517E /* Homepage3.swift in Sources */,
+				157EB61729EFA79F0056F675 /* Homepage.swift in Sources */,
 				157EB61529EFA79F0056F675 /* Kel5Mini1App.swift in Sources */,
+				15BF953B29F2F80900CA517E /* Homepage1.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
