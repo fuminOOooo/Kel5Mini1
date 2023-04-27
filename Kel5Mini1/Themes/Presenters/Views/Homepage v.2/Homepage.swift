@@ -22,12 +22,11 @@ struct Homepage: View {
         NavigationView {
             
             VStack {
-                
                 Homepage1()
                 
-                Homepage2()
+//                Homepage2()
             
-                Homepage3()
+//                Homepage3()
                 
                 Spacer()
                 

@@ -191,7 +191,7 @@ struct Homepage3: View {
                         }
                         .padding()
                         .frame(height: 40)
-                        .background(Color("414BB2", alpha: 1))
+//                        .background(Color("414BB2", alpha: 1))
                         .cornerRadius(5)
                         
                     }

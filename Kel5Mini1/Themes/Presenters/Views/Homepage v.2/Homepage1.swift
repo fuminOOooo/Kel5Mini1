@@ -26,13 +26,12 @@ struct Homepage1: View {
                     
                     // "Mitun's Family" SHOULD BE CHANGABLE
                     Text("Mitun's Family")
-                        .font(Font.custom("Fredoka", size: 28, relativeTo: .title))
-                        .foregroundColor(Color("pb900"))
+                        .font(Font.custom("ChalkboardSE-Bold", size: 26))
+                        .foregroundColor(Color("PB-800"))
                         .bold()
                     
                     Image(systemName: "chevron.down")
-                        .foregroundColor(Color("pb900"))
-                        .bold()
+                        .foregroundColor(Color("PB-800"))
                 }
                 
                 Spacer()
@@ -59,24 +58,25 @@ struct Homepage1: View {
                 Button {
                     // SHOULD NAVIGATE TO MEMBER DETAILS
                 } label: {
-                    HStack (spacing: -7) {
+                    HStack (spacing: -2) {
                         
                         // "temporaryUsers" SHOULD BE CHANGABLE
                         ForEach (0 ..< temporaryUsers.count) { users in
                             if (users < 3) {
-                                Image(systemName: "circle.fill")
+                                Image(systemName: "person.circle.fill")
                                     .resizable()
                                     .frame(width: 25, height: 25)
-                                    .foregroundColor(Color("ededf7"))
+                                    .foregroundColor(.white)
+                                    .shadow(radius: 3)
                             }
                         }
                     }
                     
                     // "temporaryUsers" SHOULD BE CHANGABLE
                     if (temporaryUsers.count > 3) {
-                        Text("+\(temporaryUsers.count-3)")
+                        Text("\(temporaryUsers.count-3)+")
                             .font(.subheadline)
-                            .foregroundColor(Color("414BB2"))
+                            .foregroundColor(Color("PB-800"))
                     }
                 }
                 
@@ -86,6 +86,16 @@ struct Homepage1: View {
             .padding(.leading)
             .padding(.trailing)
             
+        }
+        .onAppear{
+            for family: String in UIFont.familyNames
+                    {
+                        print(family)
+                        for names: String in UIFont.fontNames(forFamilyName: family)
+                        {
+                            print("== \(names)")
+                        }
+                    }
         }
     }
 }

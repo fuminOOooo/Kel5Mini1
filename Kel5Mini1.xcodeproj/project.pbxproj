@@ -16,7 +16,6 @@
 		157EB62B29EFA7A00056F675 /* Kel5Mini1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EB62A29EFA7A00056F675 /* Kel5Mini1Tests.swift */; };
 		157EB63529EFA7A00056F675 /* Kel5Mini1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EB63429EFA7A00056F675 /* Kel5Mini1UITests.swift */; };
 		157EB63729EFA7A00056F675 /* Kel5Mini1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EB63629EFA7A00056F675 /* Kel5Mini1UITestsLaunchTests.swift */; };
-		15BF953829F2E70F00CA517E /* AppColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF953729F2E70F00CA517E /* AppColor.swift */; };
 		15BF953B29F2F80900CA517E /* Homepage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF953A29F2F80900CA517E /* Homepage1.swift */; };
 		15BF953D29F31AF900CA517E /* Homepage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF953C29F31AF900CA517E /* Homepage2.swift */; };
 		15BF953F29F333F700CA517E /* Homepage3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF953E29F333F700CA517E /* Homepage3.swift */; };
@@ -28,9 +27,7 @@
 		15D975CF29F938300033D857 /* Proposed2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975CE29F938300033D857 /* Proposed2.swift */; };
 		15D975D229F9413E0033D857 /* Proposenewpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975D129F9413E0033D857 /* Proposenewpage.swift */; };
 		15D975D429F9417A0033D857 /* Proposenewpage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975D329F9417A0033D857 /* Proposenewpage1.swift */; };
-		38250DE029FA66E80021746F /* Fredoka.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38250DDF29FA66E80021746F /* Fredoka.ttf */; };
-		38250DE229FA68560021746F /* Fredoka.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38250DDF29FA66E80021746F /* Fredoka.ttf */; };
-		38250DE329FA68570021746F /* Fredoka.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38250DDF29FA66E80021746F /* Fredoka.ttf */; };
+		38250DEC29FA7E3A0021746F /* Fredoka.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38250DEB29FA7E3A0021746F /* Fredoka.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +60,6 @@
 		157EB63029EFA7A00056F675 /* Kel5Mini1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kel5Mini1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		157EB63429EFA7A00056F675 /* Kel5Mini1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kel5Mini1UITests.swift; sourceTree = "<group>"; };
 		157EB63629EFA7A00056F675 /* Kel5Mini1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kel5Mini1UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		15BF953729F2E70F00CA517E /* AppColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColor.swift; sourceTree = "<group>"; };
 		15BF953A29F2F80900CA517E /* Homepage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage1.swift; sourceTree = "<group>"; };
 		15BF953C29F31AF900CA517E /* Homepage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage2.swift; sourceTree = "<group>"; };
 		15BF953E29F333F700CA517E /* Homepage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage3.swift; sourceTree = "<group>"; };
@@ -75,8 +71,8 @@
 		15D975CE29F938300033D857 /* Proposed2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposed2.swift; sourceTree = "<group>"; };
 		15D975D129F9413E0033D857 /* Proposenewpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage.swift; sourceTree = "<group>"; };
 		15D975D329F9417A0033D857 /* Proposenewpage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage1.swift; sourceTree = "<group>"; };
-		38250DDF29FA66E80021746F /* Fredoka.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fredoka.ttf; sourceTree = "<group>"; };
 		38250DE129FA67380021746F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		38250DEB29FA7E3A0021746F /* Fredoka.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Fredoka.ttf; path = ../../../Downloads/Fredoka/Fredoka.ttf; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +162,7 @@
 		15BF953229F2E68700CA517E /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				38250DDF29FA66E80021746F /* Fredoka.ttf */,
+				38250DEB29FA7E3A0021746F /* Fredoka.ttf */,
 				157EB61429EFA79F0056F675 /* Kel5Mini1App.swift */,
 			);
 			path = Application;
@@ -175,7 +171,6 @@
 		15BF953329F2E69800CA517E /* Themes */ = {
 			isa = PBXGroup;
 			children = (
-				15BF953629F2E70400CA517E /* Colors */,
 				15BF953429F2E6AC00CA517E /* Presenters */,
 			);
 			path = Themes;
@@ -198,14 +193,6 @@
 				15D975C929F9323B0033D857 /* Proposedpage */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		15BF953629F2E70400CA517E /* Colors */ = {
-			isa = PBXGroup;
-			children = (
-				15BF953729F2E70F00CA517E /* AppColor.swift */,
-			);
-			path = Colors;
 			sourceTree = "<group>";
 		};
 		15BF953929F2F73900CA517E /* Homepage v.2 */ = {
@@ -354,7 +341,7 @@
 			files = (
 				157EB61C29EFA7A00056F675 /* Preview Assets.xcassets in Resources */,
 				157EB61929EFA7A00056F675 /* Assets.xcassets in Resources */,
-				38250DE029FA66E80021746F /* Fredoka.ttf in Resources */,
+				38250DEC29FA7E3A0021746F /* Fredoka.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,7 +349,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38250DE229FA68560021746F /* Fredoka.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +356,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38250DE329FA68570021746F /* Fredoka.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +370,6 @@
 				157EB61E29EFA7A00056F675 /* Persistence.swift in Sources */,
 				15BF953D29F31AF900CA517E /* Homepage2.swift in Sources */,
 				15D975CB29F933170033D857 /* Proposedpage.swift in Sources */,
-				15BF953829F2E70F00CA517E /* AppColor.swift in Sources */,
 				157EB62129EFA7A00056F675 /* Kel5Mini1.xcdatamodeld in Sources */,
 				15D975D229F9413E0033D857 /* Proposenewpage.swift in Sources */,
 				15BF953F29F333F700CA517E /* Homepage3.swift in Sources */,
@@ -555,7 +539,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kel5Mini1/Preview Content\"";
-				DEVELOPMENT_TEAM = 35V95TRX69;
+				DEVELOPMENT_TEAM = GT493Z58L2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kel5Mini1/Info.plist;
@@ -585,7 +569,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kel5Mini1/Preview Content\"";
-				DEVELOPMENT_TEAM = 35V95TRX69;
+				DEVELOPMENT_TEAM = GT493Z58L2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kel5Mini1/Info.plist;
