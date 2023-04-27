@@ -28,6 +28,9 @@
 		15D975CF29F938300033D857 /* Proposed2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975CE29F938300033D857 /* Proposed2.swift */; };
 		15D975D229F9413E0033D857 /* Proposenewpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975D129F9413E0033D857 /* Proposenewpage.swift */; };
 		15D975D429F9417A0033D857 /* Proposenewpage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975D329F9417A0033D857 /* Proposenewpage1.swift */; };
+		38250DE029FA66E80021746F /* Fredoka.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38250DDF29FA66E80021746F /* Fredoka.ttf */; };
+		38250DE229FA68560021746F /* Fredoka.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38250DDF29FA66E80021746F /* Fredoka.ttf */; };
+		38250DE329FA68570021746F /* Fredoka.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38250DDF29FA66E80021746F /* Fredoka.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,8 @@
 		15D975CE29F938300033D857 /* Proposed2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposed2.swift; sourceTree = "<group>"; };
 		15D975D129F9413E0033D857 /* Proposenewpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage.swift; sourceTree = "<group>"; };
 		15D975D329F9417A0033D857 /* Proposenewpage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage1.swift; sourceTree = "<group>"; };
+		38250DDF29FA66E80021746F /* Fredoka.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fredoka.ttf; sourceTree = "<group>"; };
+		38250DE129FA67380021746F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +127,7 @@
 		157EB61329EFA79F0056F675 /* Kel5Mini1 */ = {
 			isa = PBXGroup;
 			children = (
+				38250DE129FA67380021746F /* Info.plist */,
 				15BF953229F2E68700CA517E /* Application */,
 				15BF953329F2E69800CA517E /* Themes */,
 				157EB61829EFA7A00056F675 /* Assets.xcassets */,
@@ -160,6 +166,7 @@
 		15BF953229F2E68700CA517E /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				38250DDF29FA66E80021746F /* Fredoka.ttf */,
 				157EB61429EFA79F0056F675 /* Kel5Mini1App.swift */,
 			);
 			path = Application;
@@ -347,6 +354,7 @@
 			files = (
 				157EB61C29EFA7A00056F675 /* Preview Assets.xcassets in Resources */,
 				157EB61929EFA7A00056F675 /* Assets.xcassets in Resources */,
+				38250DE029FA66E80021746F /* Fredoka.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +362,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38250DE229FA68560021746F /* Fredoka.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +370,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38250DE329FA68570021746F /* Fredoka.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,6 +558,7 @@
 				DEVELOPMENT_TEAM = 35V95TRX69;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kel5Mini1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -577,6 +588,7 @@
 				DEVELOPMENT_TEAM = 35V95TRX69;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Kel5Mini1/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

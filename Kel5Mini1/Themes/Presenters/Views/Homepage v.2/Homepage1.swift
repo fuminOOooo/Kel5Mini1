@@ -26,12 +26,12 @@ struct Homepage1: View {
                     
                     // "Mitun's Family" SHOULD BE CHANGABLE
                     Text("Mitun's Family")
-                        .font(.title)
-                        .foregroundColor(Color("414BB2"))
+                        .font(Font.custom("Fredoka", size: 28, relativeTo: .title))
+                        .foregroundColor(Color("pb900"))
                         .bold()
                     
                     Image(systemName: "chevron.down")
-                        .foregroundColor(Color("414BB2"))
+                        .foregroundColor(Color("pb900"))
                         .bold()
                 }
                 

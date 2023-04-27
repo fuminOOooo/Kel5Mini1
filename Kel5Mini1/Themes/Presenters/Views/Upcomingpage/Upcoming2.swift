@@ -108,14 +108,14 @@ struct Upcoming2: View {
                             }
                             .padding()
                             .frame(height: 50)
-                            .background(Color("414BB2", alpha: 1))
+//                            .background(Color("414BB2", alpha: 1))
                             .cornerRadius(5)
                             
                         }
                         .frame(height: 180)
                     }
-                    .background(Color("414BB2", alpha: 0.1))
-                    .foregroundColor(Color("414BB2"))
+//                    .background(Color("414BB2", alpha: 0.1))
+//                    .foregroundColor(Color("414BB2"))
                 }
                 
             }
