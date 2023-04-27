@@ -41,7 +41,7 @@ struct Homepage1: View {
                     Proposenewpage()
                 } label: {
                     Image(systemName: "plus")
-                        .foregroundColor(.black)
+                        .foregroundColor(Color("PB-800"))
                         .bold()
                         .font(.title2)
                 }
