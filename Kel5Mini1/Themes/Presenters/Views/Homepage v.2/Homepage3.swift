@@ -27,8 +27,9 @@ struct Homepage3: View {
                 Spacer()
                 
                 // SHOULD NAVIGATE TO PROPOSED EVENTS LIST
-                Button {
-                    
+                
+                NavigationLink {
+                    Proposed()
                 } label: {
                     Text ("See all")
                         .foregroundColor(Color("414BB2"))
@@ -95,6 +96,7 @@ struct Homepage3: View {
                                 
                             }
                             .padding(.leading)
+                            .padding(.bottom)
                             
                         }
                         
@@ -113,8 +115,52 @@ struct Homepage3: View {
                     }
                     .padding(.leading)
                     
+                    // Component 6.5
+                    HStack {
+                        Text("INVITEES STATUS")
+                            .bold()
+                            .font(.caption2)
+                            .foregroundColor(Color("E6E6E6"))
+                        Spacer()
+                    }
+                    .padding(.top)
+                    .padding(.leading)
                     
-                    // Component 4.4
+                    // Component 6.6
+                    HStack {
+                        
+                        
+                        Button {
+                            // SHOULD NAVIGATE TO MEMBER DETAILS
+                        } label: {
+                            HStack {
+                                
+                                // "temporaryUsers" SHOULD BE CHANGABLE
+                                ForEach (0 ..< temporaryUsers.count) { users in
+                                    if (users < 3) {
+                                        Image(systemName: "circle.fill")
+                                            .resizable()
+                                            .frame(width: 25, height: 25)
+                                            .foregroundColor(Color("ededf7"))
+                                    }
+                                }
+                            }
+                            
+                            // "temporaryUsers" SHOULD BE CHANGABLE
+                            if (temporaryUsers.count > 3) {
+                                Text("+\(temporaryUsers.count-3)")
+                                    .font(.subheadline)
+                                    .foregroundColor(Color("414BB2"))
+                            }
+                        }
+                        
+                        Spacer()
+                        
+                    }
+                    .padding(.leading)
+                    .padding(.trailing)
+                    
+                    // Component 6.7
                     HStack {
                         
                         Spacer()
@@ -123,14 +169,17 @@ struct Homepage3: View {
                             
                         } label: {
                             Text("Decline")
+                                .padding()
                                 .font(.caption)
                                 .foregroundColor(Color("414BB2"))
                                 .bold()
                         }
-                        .padding()
-                        .border(Color("d9dcef"))
                         .frame(height: 40)
-                        .cornerRadius(5)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 5)
+                                .strokeBorder(.indigo, lineWidth: 1)
+                        )
+                        
                         
                         Button {
                             
@@ -146,10 +195,12 @@ struct Homepage3: View {
                         .cornerRadius(5)
                         
                     }
+                    .padding(.top)
                     .padding(.trailing)
                     
                 }
-                .frame(height: 180)
+                .frame(height: 300)
+                
             }
             .padding(.bottom)
             .foregroundColor(Color("414BB2"))

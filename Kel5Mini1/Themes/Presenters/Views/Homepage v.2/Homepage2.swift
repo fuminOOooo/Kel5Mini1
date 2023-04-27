@@ -27,8 +27,8 @@ struct Homepage2: View {
                 Spacer()
                 
                 // SHOULD NAVIGATE TO UPCOMING EVENTS LIST
-                Button {
-                    
+                NavigationLink {
+                    Upcoming()
                 } label: {
                     Text ("See all")
                         .foregroundColor(Color("414BB2"))

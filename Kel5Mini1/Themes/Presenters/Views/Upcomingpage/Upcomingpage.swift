@@ -1,14 +1,15 @@
 //
-//  ContentView.swift
+//  Upcomingpage.swift
 //  Kel5Mini1
 //
-//  Created by Elvis Susanto on 19/04/23.
+//  Created by Elvis Susanto on 25/04/23.
 //
 
 import SwiftUI
 import CoreData
 
-struct Homepage: View {
+struct Upcoming: View {
+    
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -17,19 +18,19 @@ struct Homepage: View {
     private var items: FetchedResults<Item>
 
     var body:some View {
-        NavigationView {
+        
             VStack {
                 
-                Homepage1()
+                Upcoming1()
                 
-                Homepage2()
-            
-                Homepage3()
+                Upcoming2()
                 
                 Spacer()
                 
             }
-        }
+            .navigationTitle("Upcoming Event")
+            .padding()
+            .navigationBarBackButtonHidden(true)
     }
 
     
@@ -37,6 +38,6 @@ struct Homepage: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        Homepage().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        Upcoming().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

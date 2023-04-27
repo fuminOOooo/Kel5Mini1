@@ -38,10 +38,9 @@ struct Homepage1: View {
                 Spacer()
                 
                 //Add Calendar Button
-                Button {
-                    
+                NavigationLink {
+                    Proposenewpage()
                 } label: {
-                    
                     Image(systemName: "plus")
                         .foregroundColor(.black)
                         .bold()
@@ -49,6 +48,7 @@ struct Homepage1: View {
                 }
                 
             }
+            .padding(.top)
             .padding(.leading)
             .padding(.trailing)
             
