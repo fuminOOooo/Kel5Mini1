@@ -26,10 +26,9 @@ struct Proposed1: View {
                         Homepage()
                     } label: {
                         Image(systemName: "chevron.left")
-                            .foregroundColor(.black)
-                            .bold()
-                            .font(.headline)
-                        .padding(.leading)
+                            .font(Font.custom("Fredoka-Bold", size: 14))
+                            .foregroundColor(Color("PB-800"))
+                            .padding(.leading)
                     }
                 
             }

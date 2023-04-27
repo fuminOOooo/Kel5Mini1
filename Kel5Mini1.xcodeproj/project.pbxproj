@@ -27,7 +27,8 @@
 		15D975CF29F938300033D857 /* Proposed2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975CE29F938300033D857 /* Proposed2.swift */; };
 		15D975D229F9413E0033D857 /* Proposenewpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975D129F9413E0033D857 /* Proposenewpage.swift */; };
 		15D975D429F9417A0033D857 /* Proposenewpage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975D329F9417A0033D857 /* Proposenewpage1.swift */; };
-		38250DEC29FA7E3A0021746F /* Fredoka.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38250DEB29FA7E3A0021746F /* Fredoka.ttf */; };
+		382123FE29FAE83C003B5002 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382123FD29FAE83C003B5002 /* CustomButton.swift */; };
+		382123FF29FAEF10003B5002 /* Fredoka.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 382123FB29FAD58D003B5002 /* Fredoka.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,8 +72,9 @@
 		15D975CE29F938300033D857 /* Proposed2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposed2.swift; sourceTree = "<group>"; };
 		15D975D129F9413E0033D857 /* Proposenewpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage.swift; sourceTree = "<group>"; };
 		15D975D329F9417A0033D857 /* Proposenewpage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage1.swift; sourceTree = "<group>"; };
-		38250DE129FA67380021746F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		38250DEB29FA7E3A0021746F /* Fredoka.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Fredoka.ttf; path = ../../../Downloads/Fredoka/Fredoka.ttf; sourceTree = SOURCE_ROOT; };
+		382123FB29FAD58D003B5002 /* Fredoka.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fredoka.ttf; sourceTree = "<group>"; };
+		382123FD29FAE83C003B5002 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		38250DE129FA67380021746F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Kel5Mini1/Info.plist; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,10 +125,12 @@
 		157EB61329EFA79F0056F675 /* Kel5Mini1 */ = {
 			isa = PBXGroup;
 			children = (
+				382123FC29FAE805003B5002 /* Style */,
 				38250DE129FA67380021746F /* Info.plist */,
 				15BF953229F2E68700CA517E /* Application */,
 				15BF953329F2E69800CA517E /* Themes */,
 				157EB61829EFA7A00056F675 /* Assets.xcassets */,
+				382123FB29FAD58D003B5002 /* Fredoka.ttf */,
 				157EB61D29EFA7A00056F675 /* Persistence.swift */,
 				157EB61F29EFA7A00056F675 /* Kel5Mini1.xcdatamodeld */,
 				157EB61A29EFA7A00056F675 /* Preview Content */,
@@ -162,7 +166,6 @@
 		15BF953229F2E68700CA517E /* Application */ = {
 			isa = PBXGroup;
 			children = (
-				38250DEB29FA7E3A0021746F /* Fredoka.ttf */,
 				157EB61429EFA79F0056F675 /* Kel5Mini1App.swift */,
 			);
 			path = Application;
@@ -233,6 +236,14 @@
 				15D975D329F9417A0033D857 /* Proposenewpage1.swift */,
 			);
 			path = Proposenewpage;
+			sourceTree = "<group>";
+		};
+		382123FC29FAE805003B5002 /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				382123FD29FAE83C003B5002 /* CustomButton.swift */,
+			);
+			path = Style;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,7 +352,7 @@
 			files = (
 				157EB61C29EFA7A00056F675 /* Preview Assets.xcassets in Resources */,
 				157EB61929EFA7A00056F675 /* Assets.xcassets in Resources */,
-				38250DEC29FA7E3A0021746F /* Fredoka.ttf in Resources */,
+				382123FF29FAEF10003B5002 /* Fredoka.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +381,7 @@
 				157EB61E29EFA7A00056F675 /* Persistence.swift in Sources */,
 				15BF953D29F31AF900CA517E /* Homepage2.swift in Sources */,
 				15D975CB29F933170033D857 /* Proposedpage.swift in Sources */,
+				382123FE29FAE83C003B5002 /* CustomButton.swift in Sources */,
 				157EB62129EFA7A00056F675 /* Kel5Mini1.xcdatamodeld in Sources */,
 				15D975D229F9413E0033D857 /* Proposenewpage.swift in Sources */,
 				15BF953F29F333F700CA517E /* Homepage3.swift in Sources */,

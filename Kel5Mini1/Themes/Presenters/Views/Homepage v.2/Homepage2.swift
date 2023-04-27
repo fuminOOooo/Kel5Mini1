@@ -21,8 +21,8 @@ struct Homepage2: View {
             HStack {
                 
                 Text ("Upcoming Event")
-                    .foregroundColor(Color("414BB2"))
-                    .bold()
+                    .font(Font.custom("Fredoka-Medium", size: 20))
+                    .foregroundColor(Color("PB-800"))
                 
                 Spacer()
                 
@@ -31,14 +31,12 @@ struct Homepage2: View {
                     Upcoming()
                 } label: {
                     Text ("See all")
-                        .foregroundColor(Color("414BB2"))
-                        .font(.subheadline)
+                        .font(Font.custom("Fredoka", size: 16))
+                        .foregroundColor(Color("Secondary"))
                 }
                 
                 
             }
-            .padding(.trailing)
-            .padding(.leading)
             
             // Component 4
             HStack {
@@ -52,66 +50,68 @@ struct Homepage2: View {
                             
                             // "Monday, 17 Apr" SHOULD BE CHANGABLE
                             Text("Monday, 17 Apr")
-                                .font(.caption)
+                                .font(Font.custom("Fredoka-Medium", size: 16))
+                                .foregroundColor(Color("Primary"))
                             
                             Image(systemName: "circle.fill")
-                                .font(.system(size: 3))
+                                .font(Font.custom("Fredoka-Medium", size: 3))
+                                .foregroundColor(Color("Primary"))
                             
-                            // "18.00" SHOULD BE CHANGABLE
-                            Text("18.00")
-                                .font(.caption)
+                            // "06.00 pm" SHOULD BE CHANGABLE
+                            Text("06.00 pm")
+                                .font(Font.custom("Fredoka-Medium", size: 16))
+                                .foregroundColor(Color("Primary"))
                         }
                         
                         Spacer()
+                    }
+                    
+                    // Component 4.2
+                    HStack {
                         
-                        HStack (spacing: -7) {
+                        Text("It's Mealtime!")
+                            .font(Font.custom("Fredoka-Regular", size: 18))
+                            .foregroundColor(Color("PB-800"))
+                        
+                        Spacer()
+                        
+                    }
+
+                    
+                    // Component 4.3
+                    HStack {
+                        // Text SHOULD BE CHANGABLE
+                        Text("This iftar, Hannah will pay for everything!")
+                            .font(Font.custom("Fredoka-Light", size: 16))
+                            .foregroundColor(Color("PB-800"))
+                        Spacer()
+                        
+                    }
+                    
+                    HStack {
+                        HStack (spacing: -2) {
                             
                             // "temporaryUsers" SHOULD BE CHANGABLE
                             ForEach (0 ..< temporaryUsers.count) { users in
                                 if (users < 3) {
-                                    Image(systemName: "circle.fill")
+                                    Image(systemName: "person.circle.fill")
                                         .resizable()
-                                        .frame(width: 20, height: 20)
-                                        .foregroundColor(Color("d9dcef"))
+                                        .frame(width: 25, height: 25)
+                                        .foregroundColor(.white)
+                                        .shadow(radius: 3)
                                 }
                             }
                         }
                         
                         // "temporaryUsers" SHOULD BE CHANGABLE
                         if (temporaryUsers.count > 3) {
-                            Text("+\(temporaryUsers.count-3)")
-                                .font(.caption)
-                                .foregroundColor(Color("414BB2"))
+                            Text("\(temporaryUsers.count-3)+")
+                                .font(Font.custom("Fredoka", size: 14))
+                                .foregroundColor(Color("PB-800"))
                         }
                         
-                        
-                    }
-                    .padding(.leading)
-                    .padding(.trailing)
-                    
-                    // Component 4.2
-                    HStack {
-                        
-                        Text("It's Mealtime!")
-                            .bold()
-                            .font(.title)
-                        
                         Spacer()
-                        
                     }
-                    .padding(.leading)
-                    
-                    // Component 4.3
-                    HStack {
-                        
-                        // Text SHOULD BE CHANGABLE
-                        Text("This iftar, Hanna will pay for everything!")
-                            .fontWeight(.light)
-                        
-                        Spacer()
-                        
-                    }
-                    .padding(.leading)
                     
                     // Component 4.4
                     HStack {
@@ -120,25 +120,24 @@ struct Homepage2: View {
                             
                         } label: {
                             Text("Need an interesting topic to discuss? Click Me! 🥳")
-                                .font(.caption)
+                                .font(Font.custom("Fredoka-Medium", size: 12))
                                 .foregroundColor(.white)
-                                .bold()
                         }
                         
                         
                     }
                     .padding()
-                    .frame(height: 50)
-//                    .background(Color("414BB2", alpha: 1))
-                    .cornerRadius(5)
+                    .frame(width: 315, height: 44)
+                    .background(Color("Secondary"))
+                    .cornerRadius(6)
                     
                 }
+                .padding()
                 .frame(height: 180)
             }
-//            .background(Color("414BB2", alpha: 0.1))
-            .foregroundColor(Color("414BB2"))
-            .padding(.trailing)
-            .padding(.leading)
+            .background(Color("PB-50"))
+            .cornerRadius(8)
+            .shadow(color: Color.black.opacity(0.2), radius: 3, x: 1, y: 2)
             
         }
         .padding(.top)

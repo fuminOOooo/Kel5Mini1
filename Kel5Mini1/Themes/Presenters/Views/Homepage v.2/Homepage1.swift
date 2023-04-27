@@ -26,11 +26,11 @@ struct Homepage1: View {
                     
                     // "Mitun's Family" SHOULD BE CHANGABLE
                     Text("Mitun's Family")
-                        .font(Font.custom("ChalkboardSE-Bold", size: 26))
+                        .font(Font.custom("Fredoka-Bold", size: 26))
                         .foregroundColor(Color("PB-800"))
-                        .bold()
                     
                     Image(systemName: "chevron.down")
+                        .font(Font.custom("Fredoka-Bold", size: 16))
                         .foregroundColor(Color("PB-800"))
                 }
                 
@@ -41,15 +41,12 @@ struct Homepage1: View {
                     Proposenewpage()
                 } label: {
                     Image(systemName: "plus")
+                        .font(Font.custom("Fredoka-Bold", size: 24))
                         .foregroundColor(Color("PB-800"))
                         .bold()
-                        .font(.title2)
                 }
                 
             }
-            .padding(.top)
-            .padding(.leading)
-            .padding(.trailing)
             
             //Component 2
             HStack {
@@ -75,7 +72,7 @@ struct Homepage1: View {
                     // "temporaryUsers" SHOULD BE CHANGABLE
                     if (temporaryUsers.count > 3) {
                         Text("\(temporaryUsers.count-3)+")
-                            .font(.subheadline)
+                            .font(Font.custom("Fredoka", size: 14))
                             .foregroundColor(Color("PB-800"))
                     }
                 }
@@ -83,19 +80,16 @@ struct Homepage1: View {
                 Spacer()
                 
             }
-            .padding(.leading)
-            .padding(.trailing)
-            
         }
-        .onAppear{
-            for family: String in UIFont.familyNames
-                    {
-                        print(family)
-                        for names: String in UIFont.fontNames(forFamilyName: family)
-                        {
-                            print("== \(names)")
-                        }
-                    }
-        }
+//        .onAppear{
+//            for family: String in UIFont.familyNames
+//                    {
+//                        print(family)
+//                        for names: String in UIFont.fontNames(forFamilyName: family)
+//                        {
+//                            print("== \(names)")
+//                        }
+//                    }
+//        }
     }
 }
