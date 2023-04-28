@@ -26,13 +26,12 @@ struct Homepage1: View {
                     
                     // "Mitun's Family" SHOULD BE CHANGABLE
                     Text("Mitun's Family")
-                        .font(.title)
-                        .foregroundColor(Color("414BB2"))
-                        .bold()
+                        .font(Font.custom("Fredoka-Bold", size: 26))
+                        .foregroundColor(Color("PB-800"))
                     
                     Image(systemName: "chevron.down")
-                        .foregroundColor(Color("414BB2"))
-                        .bold()
+                        .font(Font.custom("Fredoka-Bold", size: 16))
+                        .foregroundColor(Color("PB-800"))
                 }
                 
                 Spacer()
@@ -42,15 +41,12 @@ struct Homepage1: View {
                     Proposenewpage()
                 } label: {
                     Image(systemName: "plus")
-                        .foregroundColor(.black)
+                        .font(Font.custom("Fredoka-Bold", size: 24))
+                        .foregroundColor(Color("PB-800"))
                         .bold()
-                        .font(.title2)
                 }
                 
             }
-            .padding(.top)
-            .padding(.leading)
-            .padding(.trailing)
             
             //Component 2
             HStack {
@@ -59,33 +55,41 @@ struct Homepage1: View {
                 Button {
                     // SHOULD NAVIGATE TO MEMBER DETAILS
                 } label: {
-                    HStack (spacing: -7) {
+                    HStack (spacing: -2) {
                         
                         // "temporaryUsers" SHOULD BE CHANGABLE
                         ForEach (0 ..< temporaryUsers.count) { users in
                             if (users < 3) {
-                                Image(systemName: "circle.fill")
+                                Image(systemName: "person.circle.fill")
                                     .resizable()
                                     .frame(width: 25, height: 25)
-                                    .foregroundColor(Color("ededf7"))
+                                    .foregroundColor(.white)
+                                    .shadow(radius: 3)
                             }
                         }
                     }
                     
                     // "temporaryUsers" SHOULD BE CHANGABLE
                     if (temporaryUsers.count > 3) {
-                        Text("+\(temporaryUsers.count-3)")
-                            .font(.subheadline)
-                            .foregroundColor(Color("414BB2"))
+                        Text("\(temporaryUsers.count-3)+")
+                            .font(Font.custom("Fredoka", size: 14))
+                            .foregroundColor(Color("PB-800"))
                     }
                 }
                 
                 Spacer()
                 
             }
-            .padding(.leading)
-            .padding(.trailing)
-            
         }
+//        .onAppear{
+//            for family: String in UIFont.familyNames
+//                    {
+//                        print(family)
+//                        for names: String in UIFont.fontNames(forFamilyName: family)
+//                        {
+//                            print("== \(names)")
+//                        }
+//                    }
+//        }
     }
 }

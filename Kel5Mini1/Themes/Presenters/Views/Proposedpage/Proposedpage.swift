@@ -28,8 +28,8 @@ struct Proposed: View {
                 Spacer()
                 
             }
-            .navigationTitle("Proposed Event")
-            .padding()
+            .navigationBarTitle("Proposed Event")
+            .navigationBarTitleDisplayMode(.inline)
             .navigationBarBackButtonHidden(true)
     }
 

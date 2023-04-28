@@ -14,113 +14,110 @@ struct Upcoming2: View {
     @State var temporaryUsers: [String] = ["Hai", "Halo", "Hey", "Hello", "Ola"]
     
     var body: some View {
-        VStack (spacing: 4) {
-            
-            ScrollView {
-                
-                ForEach (0..<temporaryUsers.count) { temporaryUser in
-                    // Component 2
-                    HStack {
+        ScrollView (.vertical){
+            ForEach (0..<temporaryUsers.count) { temporaryUser in
+                HStack {
+                    
+                    VStack {
                         
-                        VStack {
+                        // Component 4.1
+                        HStack {
                             
-                            // Component 4.1
                             HStack {
                                 
-                                HStack {
-                                    
-                                    // "Monday, 17 Apr" SHOULD BE CHANGABLE
-                                    Text("Monday, 17 Apr")
-                                        .font(.caption)
-                                    
-                                    Image(systemName: "circle.fill")
-                                        .font(.system(size: 3))
-                                    
-                                    // "18.00" SHOULD BE CHANGABLE
-                                    Text("18.00")
-                                        .font(.caption)
-                                }
+                                // "Monday, 17 Apr" SHOULD BE CHANGABLE
+                                Text("Monday, 17 Apr")
+                                    .font(Font.custom("Fredoka-Medium", size: 24))
+                                    .foregroundColor(Color("Primary"))
                                 
-                                Spacer()
+                                Image(systemName: "circle.fill")
+                                    .font(Font.custom("Fredoka-Medium", size: 3))
+                                    .foregroundColor(Color("Primary"))
                                 
-                                HStack (spacing: -7) {
-                                    
-                                    // "temporaryUsers" SHOULD BE CHANGABLE
-                                    ForEach (0 ..< temporaryUsers.count) { users in
-                                        if (users < 3) {
-                                            Image(systemName: "circle.fill")
-                                                .resizable()
-                                                .frame(width: 20, height: 20)
-                                                .foregroundColor(Color("d9dcef"))
-                                        }
-                                    }
-                                }
-                                
-                                // "temporaryUsers" SHOULD BE CHANGABLE
-                                if (temporaryUsers.count > 3) {
-                                    Text("+\(temporaryUsers.count-3)")
-                                        .font(.caption)
-                                        .foregroundColor(Color("414BB2"))
-                                }
-                                
-                                
+                                // "06.00 pm" SHOULD BE CHANGABLE
+                                Text("06.00 pm")
+                                    .font(Font.custom("Fredoka-Medium", size: 24))
+                                    .foregroundColor(Color("Primary"))
                             }
-                            .padding(.leading)
-                            .padding(.trailing)
+                            Spacer()
+                        }
+                        
+                        // Component 4.2
+                        HStack {
                             
-                            // Component 4.2
-                            HStack {
-                                
-                                Text("It's Mealtime!")
-                                    .bold()
-                                    .font(.title)
-                                
-                                Spacer()
-                                
-                            }
-                            .padding(.leading)
+                            Text("It's Mealtime!")
+                                .font(Font.custom("Fredoka-Regular", size: 18))
+                                .foregroundColor(Color("PB-800"))
                             
-                            // Component 4.3
-                            HStack {
-                                
-                                // Text SHOULD BE CHANGABLE
-                                Text("This iftar, Hanna will pay for everything!")
-                                    .fontWeight(.light)
-                                
-                                Spacer()
-                                
-                            }
-                            .padding(.leading)
-                            
-                            // Component 4.4
-                            HStack {
-                                
-                                Button {
-                                    
-                                } label: {
-                                    Text("Need an interesting topic to discuss? Click Me! 🥳")
-                                        .font(.caption)
-                                        .foregroundColor(.white)
-                                        .bold()
-                                }
-                                
-                                
-                            }
-                            .padding()
-                            .frame(height: 50)
-                            .background(Color("414BB2", alpha: 1))
-                            .cornerRadius(5)
+                            Spacer()
                             
                         }
-                        .frame(height: 180)
+                        .padding(.top)
+                        
+                        
+                        // Component 4.3
+                        HStack {
+                            // Text SHOULD BE CHANGABLE
+                            Text("This iftar, Hannah will pay for everything!")
+                                .font(Font.custom("Fredoka-Light", size: 14))
+                                .foregroundColor(Color("PB-800"))
+                            Spacer()
+                            
+                        }
+                        
+                        HStack {
+                            HStack (spacing: -2) {
+                                
+                                // "temporaryUsers" SHOULD BE CHANGABLE
+                                ForEach (0 ..< temporaryUsers.count) { users in
+                                    if (users < 3) {
+                                        Image(systemName: "person.circle.fill")
+                                            .resizable()
+                                            .frame(width: 25, height: 25)
+                                            .foregroundColor(.white)
+                                            .shadow(radius: 3)
+                                    }
+                                }
+                            }
+                            
+                            // "temporaryUsers" SHOULD BE CHANGABLE
+                            if (temporaryUsers.count > 3) {
+                                Text("\(temporaryUsers.count-3)+")
+                                    .font(Font.custom("Fredoka", size: 14))
+                                    .foregroundColor(Color("PB-800"))
+                            }
+                            
+                            Spacer()
+                        }
+                        
+                        // Component 4.4
+                        HStack {
+                            
+                            Button {
+                                
+                            } label: {
+                                Text("Need an interesting topic to discuss? Click Me! 🥳")
+                                    .font(Font.custom("Fredoka-Medium", size: 12))
+                                    .foregroundColor(.white)
+                            }
+                            
+                            
+                        }
+                        .padding()
+                        .frame(width: 320, height: 44)
+                        .background(Color("Secondary"))
+                        .cornerRadius(6)
+                        
                     }
-                    .background(Color("414BB2", alpha: 0.1))
-                    .foregroundColor(Color("414BB2"))
+                    .padding()
+                    .frame(height: 220)
                 }
-                
+                .background(Color("PB-50"))
+                .cornerRadius(8)
+                .shadow(color: Color.black.opacity(0.2), radius: 3, x: 1, y: 2)
+                .padding(.bottom)
             }
-            
-            
+            .padding()
         }
     }
 }
