@@ -18,7 +18,6 @@ struct Proposed2: View {
             ForEach (0..<temporaryUsers.count) { temporaryUser in
                 // Component 2
                 HStack {
-                    
                     VStack {
                         
                         // Component 6.1, 6.2 & 6.3
@@ -76,12 +75,9 @@ struct Proposed2: View {
                             // Text SHOULD BE CHANGABLE
                             Text("I got a new resto recommendation, let’s eat there!")
                                 .font(Font.custom("Fredoka-Light", size: 16))
-                                .foregroundColor(Color("PB-800"))
-                            
-                            Spacer()
-                            
+                                .foregroundColor(Color("PB-800"))                            
                         }
-                        .padding(.init(top: 0.5, leading: 0, bottom: 0, trailing: 0))
+                        .padding(.top)
                         
                         // Component 6.5
                         HStack {
@@ -140,7 +136,7 @@ struct Proposed2: View {
                         }
                     }
                     .padding()
-                    .frame(height: 260)
+                    .frame(height: 590)
                     
                 }
                 .background(.white)

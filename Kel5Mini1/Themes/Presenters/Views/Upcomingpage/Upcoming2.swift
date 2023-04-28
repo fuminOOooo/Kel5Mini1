@@ -27,7 +27,7 @@ struct Upcoming2: View {
                                 
                                 // "Monday, 17 Apr" SHOULD BE CHANGABLE
                                 Text("Monday, 17 Apr")
-                                    .font(Font.custom("Fredoka-Medium", size: 16))
+                                    .font(Font.custom("Fredoka-Medium", size: 24))
                                     .foregroundColor(Color("Primary"))
                                 
                                 Image(systemName: "circle.fill")
@@ -36,10 +36,9 @@ struct Upcoming2: View {
                                 
                                 // "06.00 pm" SHOULD BE CHANGABLE
                                 Text("06.00 pm")
-                                    .font(Font.custom("Fredoka-Medium", size: 16))
+                                    .font(Font.custom("Fredoka-Medium", size: 24))
                                     .foregroundColor(Color("Primary"))
                             }
-                            
                             Spacer()
                         }
                         
@@ -53,13 +52,14 @@ struct Upcoming2: View {
                             Spacer()
                             
                         }
+                        .padding(.top)
                         
                         
                         // Component 4.3
                         HStack {
                             // Text SHOULD BE CHANGABLE
                             Text("This iftar, Hannah will pay for everything!")
-                                .font(Font.custom("Fredoka-Light", size: 16))
+                                .font(Font.custom("Fredoka-Light", size: 14))
                                 .foregroundColor(Color("PB-800"))
                             Spacer()
                             
@@ -110,7 +110,7 @@ struct Upcoming2: View {
                         
                     }
                     .padding()
-                    .frame(height: 180)
+                    .frame(height: 220)
                 }
                 .background(Color("PB-50"))
                 .cornerRadius(8)

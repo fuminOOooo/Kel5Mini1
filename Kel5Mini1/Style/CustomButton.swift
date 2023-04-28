@@ -10,9 +10,9 @@ import SwiftUI
 struct BorderButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .font(Font.custom("Fredoka-Medium", size: 12))
+            .font(Font.custom("Fredoka-Medium", size: 16))
             .padding()
-            .frame(height: 34)
+            .frame(height: 44)
             .background(configuration.isPressed ? Color("Secondary") : Color(.white))
             .overlay(
                         RoundedRectangle(cornerRadius: 6)
@@ -26,9 +26,9 @@ struct BorderButton: ButtonStyle {
 struct FillButton: ButtonStyle {
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .font(Font.custom("Fredoka-Medium", size: 12))
+            .font(Font.custom("Fredoka-Medium", size: 16))
             .padding()
-            .frame(height: 34)
+            .frame(height: 44)
             .background(configuration.isPressed ? Color("SO-600") : Color("Secondary"))
             .overlay(
                         RoundedRectangle(cornerRadius: 6)
