@@ -23,7 +23,13 @@ struct Proposenewpage: View {
                 
                 Proposenewpage1()
                 
+                Proposenewpage2()
+                
+                Proposenewpage3()
+                
                 Spacer()
+                
+                Proposenewpage4()
                 
             }
             .navigationTitle("Propose New Event")

@@ -28,6 +28,10 @@
 		15D975CF29F938300033D857 /* Proposed2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975CE29F938300033D857 /* Proposed2.swift */; };
 		15D975D229F9413E0033D857 /* Proposenewpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975D129F9413E0033D857 /* Proposenewpage.swift */; };
 		15D975D429F9417A0033D857 /* Proposenewpage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975D329F9417A0033D857 /* Proposenewpage1.swift */; };
+		15D975DB29FAD4510033D857 /* Proposenewpage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975DA29FAD4510033D857 /* Proposenewpage2.swift */; };
+		15D975DD29FADB920033D857 /* Proposenewpage3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975DC29FADB920033D857 /* Proposenewpage3.swift */; };
+		15D975DF29FB7BD60033D857 /* Proposenewpage4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975DE29FB7BD60033D857 /* Proposenewpage4.swift */; };
+		15D975E329FB7F250033D857 /* Proposenewpage Viewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975E229FB7F250033D857 /* Proposenewpage Viewmodel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +76,10 @@
 		15D975CE29F938300033D857 /* Proposed2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposed2.swift; sourceTree = "<group>"; };
 		15D975D129F9413E0033D857 /* Proposenewpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage.swift; sourceTree = "<group>"; };
 		15D975D329F9417A0033D857 /* Proposenewpage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage1.swift; sourceTree = "<group>"; };
+		15D975DA29FAD4510033D857 /* Proposenewpage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage2.swift; sourceTree = "<group>"; };
+		15D975DC29FADB920033D857 /* Proposenewpage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage3.swift; sourceTree = "<group>"; };
+		15D975DE29FB7BD60033D857 /* Proposenewpage4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage4.swift; sourceTree = "<group>"; };
+		15D975E229FB7F250033D857 /* Proposenewpage Viewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Proposenewpage Viewmodel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,7 @@
 				157EB61829EFA7A00056F675 /* Assets.xcassets */,
 				157EB61D29EFA7A00056F675 /* Persistence.swift */,
 				157EB61F29EFA7A00056F675 /* Kel5Mini1.xcdatamodeld */,
+				15D975E029FB7E7C0033D857 /* Features */,
 				157EB61A29EFA7A00056F675 /* Preview Content */,
 			);
 			path = Kel5Mini1;
@@ -237,8 +246,27 @@
 			children = (
 				15D975D129F9413E0033D857 /* Proposenewpage.swift */,
 				15D975D329F9417A0033D857 /* Proposenewpage1.swift */,
+				15D975DA29FAD4510033D857 /* Proposenewpage2.swift */,
+				15D975DC29FADB920033D857 /* Proposenewpage3.swift */,
+				15D975DE29FB7BD60033D857 /* Proposenewpage4.swift */,
 			);
 			path = Proposenewpage;
+			sourceTree = "<group>";
+		};
+		15D975E029FB7E7C0033D857 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				15D975E129FB7EF80033D857 /* Viewmodels */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		15D975E129FB7EF80033D857 /* Viewmodels */ = {
+			isa = PBXGroup;
+			children = (
+				15D975E229FB7F250033D857 /* Proposenewpage Viewmodel.swift */,
+			);
+			path = Viewmodels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,9 +401,12 @@
 			files = (
 				15D975D429F9417A0033D857 /* Proposenewpage1.swift in Sources */,
 				157EB61E29EFA7A00056F675 /* Persistence.swift in Sources */,
+				15D975DF29FB7BD60033D857 /* Proposenewpage4.swift in Sources */,
 				15BF953D29F31AF900CA517E /* Homepage2.swift in Sources */,
+				15D975E329FB7F250033D857 /* Proposenewpage Viewmodel.swift in Sources */,
 				15D975CB29F933170033D857 /* Proposedpage.swift in Sources */,
 				15BF953829F2E70F00CA517E /* AppColor.swift in Sources */,
+				15D975DB29FAD4510033D857 /* Proposenewpage2.swift in Sources */,
 				157EB62129EFA7A00056F675 /* Kel5Mini1.xcdatamodeld in Sources */,
 				15D975D229F9413E0033D857 /* Proposenewpage.swift in Sources */,
 				15BF953F29F333F700CA517E /* Homepage3.swift in Sources */,
@@ -386,6 +417,7 @@
 				157EB61529EFA79F0056F675 /* Kel5Mini1App.swift in Sources */,
 				15BF953B29F2F80900CA517E /* Homepage1.swift in Sources */,
 				15D975CF29F938300033D857 /* Proposed2.swift in Sources */,
+				15D975DD29FADB920033D857 /* Proposenewpage3.swift in Sources */,
 				15D975C829F90E620033D857 /* Upcoming2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
