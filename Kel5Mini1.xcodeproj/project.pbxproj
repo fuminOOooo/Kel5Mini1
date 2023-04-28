@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1551941B29FB931400A31780 /* Proposenewpage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551941A29FB931400A31780 /* Proposenewpage2.swift */; };
+		1551941E29FB939E00A31780 /* Proposenew Viewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551941D29FB939E00A31780 /* Proposenew Viewmodel.swift */; };
+		1551942029FB9DAA00A31780 /* Proposenewpage3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551941F29FB9DAA00A31780 /* Proposenewpage3.swift */; };
+		1551942229FBC73D00A31780 /* Proposenewpage4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551942129FBC73D00A31780 /* Proposenewpage4.swift */; };
+		1551942429FC417100A31780 /* Homepage Viewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551942329FC417100A31780 /* Homepage Viewmodel.swift */; };
 		157EB61529EFA79F0056F675 /* Kel5Mini1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EB61429EFA79F0056F675 /* Kel5Mini1App.swift */; };
 		157EB61729EFA79F0056F675 /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EB61629EFA79F0056F675 /* Homepage.swift */; };
 		157EB61929EFA7A00056F675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157EB61829EFA7A00056F675 /* Assets.xcassets */; };
@@ -49,6 +54,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1551941A29FB931400A31780 /* Proposenewpage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage2.swift; sourceTree = "<group>"; };
+		1551941D29FB939E00A31780 /* Proposenew Viewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Proposenew Viewmodel.swift"; sourceTree = "<group>"; };
+		1551941F29FB9DAA00A31780 /* Proposenewpage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage3.swift; sourceTree = "<group>"; };
+		1551942129FBC73D00A31780 /* Proposenewpage4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage4.swift; sourceTree = "<group>"; };
+		1551942329FC417100A31780 /* Homepage Viewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Homepage Viewmodel.swift"; sourceTree = "<group>"; };
 		157EB61129EFA79F0056F675 /* Kel5Mini1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kel5Mini1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		157EB61429EFA79F0056F675 /* Kel5Mini1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kel5Mini1App.swift; sourceTree = "<group>"; };
 		157EB61629EFA79F0056F675 /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
@@ -102,6 +112,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1551941C29FB938B00A31780 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				1551941D29FB939E00A31780 /* Proposenew Viewmodel.swift */,
+				1551942329FC417100A31780 /* Homepage Viewmodel.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
 		157EB60829EFA79F0056F675 = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +185,7 @@
 		15BF953229F2E68700CA517E /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				1551941C29FB938B00A31780 /* Features */,
 				157EB61429EFA79F0056F675 /* Kel5Mini1App.swift */,
 			);
 			path = Application;
@@ -234,6 +254,9 @@
 			children = (
 				15D975D129F9413E0033D857 /* Proposenewpage.swift */,
 				15D975D329F9417A0033D857 /* Proposenewpage1.swift */,
+				1551941A29FB931400A31780 /* Proposenewpage2.swift */,
+				1551941F29FB9DAA00A31780 /* Proposenewpage3.swift */,
+				1551942129FBC73D00A31780 /* Proposenewpage4.swift */,
 			);
 			path = Proposenewpage;
 			sourceTree = "<group>";
@@ -377,11 +400,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1551942029FB9DAA00A31780 /* Proposenewpage3.swift in Sources */,
 				15D975D429F9417A0033D857 /* Proposenewpage1.swift in Sources */,
 				157EB61E29EFA7A00056F675 /* Persistence.swift in Sources */,
 				15BF953D29F31AF900CA517E /* Homepage2.swift in Sources */,
 				15D975CB29F933170033D857 /* Proposedpage.swift in Sources */,
 				382123FE29FAE83C003B5002 /* CustomButton.swift in Sources */,
+				1551942429FC417100A31780 /* Homepage Viewmodel.swift in Sources */,
+				1551941E29FB939E00A31780 /* Proposenew Viewmodel.swift in Sources */,
+				1551942229FBC73D00A31780 /* Proposenewpage4.swift in Sources */,
+				1551941B29FB931400A31780 /* Proposenewpage2.swift in Sources */,
 				157EB62129EFA7A00056F675 /* Kel5Mini1.xcdatamodeld in Sources */,
 				15D975D229F9413E0033D857 /* Proposenewpage.swift in Sources */,
 				15BF953F29F333F700CA517E /* Homepage3.swift in Sources */,
@@ -551,7 +579,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kel5Mini1/Preview Content\"";
-				DEVELOPMENT_TEAM = GT493Z58L2;
+				DEVELOPMENT_TEAM = 35V95TRX69;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kel5Mini1/Info.plist;
@@ -581,7 +609,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Kel5Mini1/Preview Content\"";
-				DEVELOPMENT_TEAM = GT493Z58L2;
+				DEVELOPMENT_TEAM = 35V95TRX69;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Kel5Mini1/Info.plist;

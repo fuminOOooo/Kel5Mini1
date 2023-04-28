@@ -11,6 +11,12 @@ import CoreData
 
 struct Homepage1: View {
     
+    @StateObject var PnVM = ProposenewViewModel()
+    
+    @StateObject var HpVM = HomepageViewModel()
+    
+    @State var calendarSelection: Bool = false
+    
     @State var temporaryUsers: [String] = ["Hai", "Halo", "Hey", "Hello", "Ola"]
     
     var body: some View {
@@ -22,6 +28,7 @@ struct Homepage1: View {
                 // Calendar Name
                 Button {
                     // SHOULD NAVIGATE TO CALENDARS MODAL
+                    calendarSelection.toggle()
                 } label: {
                     
                     // "Mitun's Family" SHOULD BE CHANGABLE
@@ -33,12 +40,30 @@ struct Homepage1: View {
                         .font(Font.custom("Fredoka-Bold", size: 16))
                         .foregroundColor(Color("PB-800"))
                 }
+                .sheet(isPresented: $calendarSelection, content: {
+                    
+                    GeometryReader { geometry in
+                        VStack {
+                            Text("Families")
+                                .font(Font.custom("Fredoka-Medium", size: 26))
+                                .foregroundColor(Color("PB-800"))
+                            
+                            .padding()
+                            
+                            Spacer()
+                            
+                        }
+                        .frame(maxWidth: .infinity, maxHeight: UIScreen.main.bounds.height * 0.5)
+                                    .background(Color.white)
+                    }
+                    
+                })
                 
                 Spacer()
                 
                 //Add Calendar Button
                 NavigationLink {
-                    Proposenewpage()
+                    Proposenewpage(VM: PnVM)
                 } label: {
                     Image(systemName: "plus")
                         .font(Font.custom("Fredoka-Bold", size: 24))
@@ -47,6 +72,7 @@ struct Homepage1: View {
                 }
                 
             }
+            
             
             //Component 2
             HStack {
@@ -80,6 +106,7 @@ struct Homepage1: View {
                 Spacer()
                 
             }
+            
         }
 //        .onAppear{
 //            for family: String in UIFont.familyNames

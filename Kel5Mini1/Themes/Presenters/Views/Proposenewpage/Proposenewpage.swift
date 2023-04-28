@@ -10,6 +10,8 @@ import CoreData
 
 struct Proposenewpage: View {
     
+    var VM: ProposenewViewModel
+    
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -22,6 +24,12 @@ struct Proposenewpage: View {
             VStack {
                 
                 Proposenewpage1()
+                
+                Proposenewpage2(VM: VM)
+                
+                Proposenewpage3(VM: VM)
+                
+                Proposenewpage4(VM: VM)
                 
                 Spacer()
                 
