@@ -22,7 +22,7 @@ struct Homepage3: View {
                     .foregroundColor(Color("Gray3"))
                 Spacer()
                 NavigationLink {
-                    Upcoming()
+                    Proposed()
                 } label: {
                     Text ("See all")
                         .font(Font.custom("Fredoka", size: 16))
@@ -37,7 +37,7 @@ struct Homepage3: View {
                     //Content should be changeable
                     Text("Elvis has invited you to join...")
                         .font(Font.custom("Fredoka-Regular", size: 14))
-                        .foregroundColor(Color("PB-800"))
+                        .foregroundColor(Color("PB-900"))
                 }
                 
                 HStack{
