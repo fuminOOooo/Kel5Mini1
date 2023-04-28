@@ -40,7 +40,7 @@ struct Homepage2: View {
                         .foregroundColor(Color("Primary"))
                     
                     Image(systemName: "circle.fill")
-                        .font(Font.custom("Fredoka-Medium", size: 3))
+                        .font(Font.custom("Fredoka-Medium", size: 5))
                         .foregroundColor(Color("Primary"))
                     
                     // "06.00 pm" SHOULD BE CHANGABLE
@@ -67,16 +67,15 @@ struct Homepage2: View {
                         //code here
                     } label: {
                         Text("Find Topic 🤩")
-                            .frame(minWidth: 300)
-                    }
-                .buttonStyle(FillButton())
+                            .frame(minWidth: 335)
+                    }.buttonStyle(FillButton())
                 }
                 
             }
             .padding()
-            .background(Color("PB-100"))
+            .background(Color("PB-50"))
             .cornerRadius(8)
-            .shadow(color: Color.black.opacity(0.1), radius: 3, x: 1, y: 2)
+//            .shadow(color: Color.black.opacity(0.1), radius: 3, x: 1, y: 2)
         }
     }
 }

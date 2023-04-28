@@ -26,11 +26,11 @@ struct Homepage1: View {
                     
                     // "Mitun's Family" SHOULD BE CHANGABLE
                     Text("Mitun's Family")
-                        .font(Font.custom("Fredoka-Bold", size: 26))
+                        .font(Font.custom("Fredoka-Medium", size: 26))
                         .foregroundColor(Color("PB-800"))
                     
                     Image(systemName: "chevron.down")
-                        .font(Font.custom("Fredoka-Bold", size: 16))
+                        .font(Font.custom("Fredoka-Medium", size: 16))
                         .foregroundColor(Color("PB-800"))
                 }
                 
@@ -41,9 +41,8 @@ struct Homepage1: View {
                     Proposenewpage()
                 } label: {
                     Image(systemName: "plus")
-                        .font(Font.custom("Fredoka-Bold", size: 24))
+                        .font(Font.custom("Fredoka-Semibold", size: 24))
                         .foregroundColor(Color("PB-800"))
-                        .bold()
                 }
                 
             }
@@ -55,7 +54,7 @@ struct Homepage1: View {
                 Button {
                     // SHOULD NAVIGATE TO MEMBER DETAILS
                 } label: {
-                    HStack (spacing: -2) {
+                    HStack (spacing: -4) {
                         
                         // "temporaryUsers" SHOULD BE CHANGABLE
                         ForEach (0 ..< temporaryUsers.count) { users in
@@ -63,8 +62,7 @@ struct Homepage1: View {
                                 Image(systemName: "person.circle.fill")
                                     .resizable()
                                     .frame(width: 25, height: 25)
-                                    .foregroundColor(.white)
-                                    .shadow(radius: 3)
+                                    .foregroundColor(.gray)
                             }
                         }
                     }

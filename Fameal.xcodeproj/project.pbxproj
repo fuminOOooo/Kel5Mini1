@@ -49,16 +49,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		157EB61129EFA79F0056F675 /* Kel5Mini1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kel5Mini1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		157EB61129EFA79F0056F675 /* Fameal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fameal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		157EB61429EFA79F0056F675 /* Kel5Mini1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kel5Mini1App.swift; sourceTree = "<group>"; };
 		157EB61629EFA79F0056F675 /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
 		157EB61829EFA7A00056F675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		157EB61B29EFA7A00056F675 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		157EB61D29EFA7A00056F675 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		157EB62029EFA7A00056F675 /* Kel5Mini1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Kel5Mini1.xcdatamodel; sourceTree = "<group>"; };
-		157EB62629EFA7A00056F675 /* Kel5Mini1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kel5Mini1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		157EB62629EFA7A00056F675 /* FamealTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamealTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		157EB62A29EFA7A00056F675 /* Kel5Mini1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kel5Mini1Tests.swift; sourceTree = "<group>"; };
-		157EB63029EFA7A00056F675 /* Kel5Mini1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kel5Mini1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		157EB63029EFA7A00056F675 /* FamealUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FamealUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		157EB63429EFA7A00056F675 /* Kel5Mini1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kel5Mini1UITests.swift; sourceTree = "<group>"; };
 		157EB63629EFA7A00056F675 /* Kel5Mini1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kel5Mini1UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		15BF953A29F2F80900CA517E /* Homepage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage1.swift; sourceTree = "<group>"; };
@@ -115,9 +115,9 @@
 		157EB61229EFA79F0056F675 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				157EB61129EFA79F0056F675 /* Kel5Mini1.app */,
-				157EB62629EFA7A00056F675 /* Kel5Mini1Tests.xctest */,
-				157EB63029EFA7A00056F675 /* Kel5Mini1UITests.xctest */,
+				157EB61129EFA79F0056F675 /* Fameal.app */,
+				157EB62629EFA7A00056F675 /* FamealTests.xctest */,
+				157EB63029EFA7A00056F675 /* FamealUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -249,9 +249,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		157EB61029EFA79F0056F675 /* Kel5Mini1 */ = {
+		157EB61029EFA79F0056F675 /* Fameal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 157EB63A29EFA7A00056F675 /* Build configuration list for PBXNativeTarget "Kel5Mini1" */;
+			buildConfigurationList = 157EB63A29EFA7A00056F675 /* Build configuration list for PBXNativeTarget "Fameal" */;
 			buildPhases = (
 				157EB60D29EFA79F0056F675 /* Sources */,
 				157EB60E29EFA79F0056F675 /* Frameworks */,
@@ -261,14 +261,14 @@
 			);
 			dependencies = (
 			);
-			name = Kel5Mini1;
+			name = Fameal;
 			productName = Kel5Mini1;
-			productReference = 157EB61129EFA79F0056F675 /* Kel5Mini1.app */;
+			productReference = 157EB61129EFA79F0056F675 /* Fameal.app */;
 			productType = "com.apple.product-type.application";
 		};
-		157EB62529EFA7A00056F675 /* Kel5Mini1Tests */ = {
+		157EB62529EFA7A00056F675 /* FamealTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 157EB63D29EFA7A00056F675 /* Build configuration list for PBXNativeTarget "Kel5Mini1Tests" */;
+			buildConfigurationList = 157EB63D29EFA7A00056F675 /* Build configuration list for PBXNativeTarget "FamealTests" */;
 			buildPhases = (
 				157EB62229EFA7A00056F675 /* Sources */,
 				157EB62329EFA7A00056F675 /* Frameworks */,
@@ -279,14 +279,14 @@
 			dependencies = (
 				157EB62829EFA7A00056F675 /* PBXTargetDependency */,
 			);
-			name = Kel5Mini1Tests;
+			name = FamealTests;
 			productName = Kel5Mini1Tests;
-			productReference = 157EB62629EFA7A00056F675 /* Kel5Mini1Tests.xctest */;
+			productReference = 157EB62629EFA7A00056F675 /* FamealTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		157EB62F29EFA7A00056F675 /* Kel5Mini1UITests */ = {
+		157EB62F29EFA7A00056F675 /* FamealUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 157EB64029EFA7A00056F675 /* Build configuration list for PBXNativeTarget "Kel5Mini1UITests" */;
+			buildConfigurationList = 157EB64029EFA7A00056F675 /* Build configuration list for PBXNativeTarget "FamealUITests" */;
 			buildPhases = (
 				157EB62C29EFA7A00056F675 /* Sources */,
 				157EB62D29EFA7A00056F675 /* Frameworks */,
@@ -297,9 +297,9 @@
 			dependencies = (
 				157EB63229EFA7A00056F675 /* PBXTargetDependency */,
 			);
-			name = Kel5Mini1UITests;
+			name = FamealUITests;
 			productName = Kel5Mini1UITests;
-			productReference = 157EB63029EFA7A00056F675 /* Kel5Mini1UITests.xctest */;
+			productReference = 157EB63029EFA7A00056F675 /* FamealUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -325,7 +325,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 157EB60C29EFA79F0056F675 /* Build configuration list for PBXProject "Kel5Mini1" */;
+			buildConfigurationList = 157EB60C29EFA79F0056F675 /* Build configuration list for PBXProject "Fameal" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -338,9 +338,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				157EB61029EFA79F0056F675 /* Kel5Mini1 */,
-				157EB62529EFA7A00056F675 /* Kel5Mini1Tests */,
-				157EB62F29EFA7A00056F675 /* Kel5Mini1UITests */,
+				157EB61029EFA79F0056F675 /* Fameal */,
+				157EB62529EFA7A00056F675 /* FamealTests */,
+				157EB62F29EFA7A00056F675 /* FamealUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -418,12 +418,12 @@
 /* Begin PBXTargetDependency section */
 		157EB62829EFA7A00056F675 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 157EB61029EFA79F0056F675 /* Kel5Mini1 */;
+			target = 157EB61029EFA79F0056F675 /* Fameal */;
 			targetProxy = 157EB62729EFA7A00056F675 /* PBXContainerItemProxy */;
 		};
 		157EB63229EFA7A00056F675 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 157EB61029EFA79F0056F675 /* Kel5Mini1 */;
+			target = 157EB61029EFA79F0056F675 /* Fameal */;
 			targetProxy = 157EB63129EFA7A00056F675 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -619,7 +619,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kel5Mini1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kel5Mini1";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fameal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fameal";
 			};
 			name = Debug;
 		};
@@ -639,7 +639,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Kel5Mini1.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Kel5Mini1";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fameal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Fameal";
 			};
 			name = Release;
 		};
@@ -682,7 +682,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		157EB60C29EFA79F0056F675 /* Build configuration list for PBXProject "Kel5Mini1" */ = {
+		157EB60C29EFA79F0056F675 /* Build configuration list for PBXProject "Fameal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				157EB63829EFA7A00056F675 /* Debug */,
@@ -691,7 +691,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		157EB63A29EFA7A00056F675 /* Build configuration list for PBXNativeTarget "Kel5Mini1" */ = {
+		157EB63A29EFA7A00056F675 /* Build configuration list for PBXNativeTarget "Fameal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				157EB63B29EFA7A00056F675 /* Debug */,
@@ -700,7 +700,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		157EB63D29EFA7A00056F675 /* Build configuration list for PBXNativeTarget "Kel5Mini1Tests" */ = {
+		157EB63D29EFA7A00056F675 /* Build configuration list for PBXNativeTarget "FamealTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				157EB63E29EFA7A00056F675 /* Debug */,
@@ -709,7 +709,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		157EB64029EFA7A00056F675 /* Build configuration list for PBXNativeTarget "Kel5Mini1UITests" */ = {
+		157EB64029EFA7A00056F675 /* Build configuration list for PBXNativeTarget "FamealUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				157EB64129EFA7A00056F675 /* Debug */,

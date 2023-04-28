@@ -12,7 +12,7 @@ struct Homepage: View {
     init() {
         let appearance = UINavigationBarAppearance()
         let customColor = UIColor(named: "PB-800")!
-        appearance.titleTextAttributes = [.foregroundColor: customColor, .font: UIFont(name: "Fredoka-Medium", size: 22)!
+        appearance.titleTextAttributes = [.foregroundColor: customColor, .font: UIFont(name: "Fredoka-Medium", size: 18)!
             ]
         UINavigationBar.appearance().standardAppearance = appearance
     }
@@ -27,9 +27,9 @@ struct Homepage: View {
     var body:some View {
         
         NavigationView {
-            
             VStack {
                 Homepage1()
+                    .padding(.top)
                 
                 Homepage2()
             
@@ -37,9 +37,8 @@ struct Homepage: View {
                     .padding(.top)
                 
                 Spacer()
-                
             }
-            .padding(24)
+            .padding()
         }
         .navigationBarBackButtonHidden(true)
     }
