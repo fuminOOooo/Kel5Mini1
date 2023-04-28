@@ -28,8 +28,9 @@ struct Upcoming: View {
                 Spacer()
                 
             }
-            .navigationTitle("Upcoming Event")
             .padding()
+            .navigationBarTitle("Upcoming Event")
+            .navigationBarTitleDisplayMode(.inline)
             .navigationBarBackButtonHidden(true)
     }
 

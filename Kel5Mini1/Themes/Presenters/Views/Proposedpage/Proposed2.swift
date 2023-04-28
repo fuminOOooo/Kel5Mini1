@@ -14,180 +14,137 @@ struct Proposed2: View {
     @State var temporaryUsers: [String] = ["Hai", "Halo", "Hey", "Hello", "Ola"]
     
     var body: some View {
-        VStack (spacing: 4) {
-            
-            ScrollView {
-                
-                ForEach (0..<temporaryUsers.count) { temporaryUser in
-                    // Component 2
-                    HStack {
+        ScrollView(.vertical) {
+            ForEach (0..<temporaryUsers.count) { temporaryUser in
+                // Component 2
+                HStack {
+                    VStack {
                         
-                        VStack {
+                        // Component 6.1, 6.2 & 6.3
+                        
+                        VStack (spacing: 14) {
                             
-                            // Component 6.1, 6.2 & 6.3
-                            
-                            VStack (spacing: 10) {
+                            // Component 6.1
+                            HStack {
                                 
-                                // Component 6.1
                                 HStack {
                                     
-                                    HStack {
-                                        
-                                        // "Hannei" SHOULD BE CHANGABLE
-                                        Text("Hannei has invited you to join..")
-                                            .font(.caption)
-                                        
-                                    }
+                                    // "Elvis" SHOULD BE CHANGABLE
+                                    Text("Elvis has invited you to join...")
+                                        .font(Font.custom("Fredoka", size: 12))
+                                        .foregroundColor(Color("PB-800"))
+                                }
+                                Spacer()
+                            }
+                            
+                            // Component 6.2 & 6.3
+                            HStack {
+                                
+                                // Component 6.2
+                                HStack {
+                                    
+                                    // "Monday, 17 Apr" SHOULD BE CHANGABLE
+                                    Text("Monday, 17 Apr")
+                                        .font(Font.custom("Fredoka-Medium", size: 16))
+                                        .foregroundColor(Color("Primary"))
+                                    
+                                }
+                                
+                                Image(systemName: "circle.fill")
+                                    .font(Font.custom("Fredoka-Medium", size: 3))
+                                    .foregroundColor(Color("Primary"))
+                                
+                                // Component 6.3
+                                HStack {
+                                    
+                                    // "09.00 pm" SHOULD BE CHANGABLE
+                                    Text("09.00 pm")
+                                        .font(Font.custom("Fredoka-Medium", size: 16))
+                                        .foregroundColor(Color("Primary"))
                                     
                                     Spacer()
                                     
                                 }
-                                .padding(.top)
-                                .padding(.leading)
-                                .padding(.trailing)
-                                
-                                // Component 6.2 & 6.3
-                                VStack {
-                                    
-                                    // Component 6.2
-                                    HStack {
-                                        
-                                        // "Monday, 17 Apr" SHOULD BE CHANGABLE
-                                        Text("Monday, 17 Apr")
-                                            .bold()
-                                            .font(.title)
-                                        
-                                        Spacer()
-                                        
-                                    }
-                                    .padding(.leading)
-                                    
-                                    // Component 6.3
-                                    HStack {
-                                        
-                                        // "at 09.00" SHOULD BE CHANGABLE
-                                        Text("at 09.00")
-                                            .bold()
-                                            .font(.title2)
-                                        
-                                        Spacer()
-                                        
-                                    }
-                                    .padding(.leading)
-                                    .padding(.bottom)
-                                    
-                                }
-                                
                             }
-                            
-                            // Component 6.4
-                            HStack {
-                                
-                                // Text SHOULD BE CHANGABLE
-                                Text("I got THR guyss, let's iftar together!!!")
-                                    .fontWeight(.light)
-                                    .font(.subheadline)
-                                
-                                Spacer()
-                                
-                            }
-                            .padding(.leading)
-                            
-                            // Component 6.5
-                            HStack {
-                                Text("INVITEES STATUS")
-                                    .bold()
-                                    .font(.caption2)
-                                    .foregroundColor(Color("E6E6E6"))
-                                Spacer()
-                            }
-                            .padding(.top)
-                            .padding(.leading)
-                            
-                            // Component 6.6
-                            HStack {
-                                
-                                
-                                Button {
-                                    // SHOULD NAVIGATE TO MEMBER DETAILS
-                                } label: {
-                                    HStack {
-                                        
-                                        // "temporaryUsers" SHOULD BE CHANGABLE
-                                        ForEach (0 ..< temporaryUsers.count) { users in
-                                            if (users < 3) {
-                                                Image(systemName: "circle.fill")
-                                                    .resizable()
-                                                    .frame(width: 25, height: 25)
-                                                    .foregroundColor(Color("ededf7"))
-                                            }
-                                        }
-                                    }
-                                    
-                                    // "temporaryUsers" SHOULD BE CHANGABLE
-                                    if (temporaryUsers.count > 3) {
-                                        Text("+\(temporaryUsers.count-3)")
-                                            .font(.subheadline)
-                                            .foregroundColor(Color("414BB2"))
-                                    }
-                                }
-                                
-                                Spacer()
-                                
-                            }
-                            .padding(.leading)
-                            .padding(.trailing)
-                            
-                            // Component 6.7
-                            HStack {
-                                
-                                Spacer()
-                                
-                                Button {
-                                    
-                                } label: {
-                                    Text("Decline")
-                                        .padding()
-                                        .font(.caption)
-                                        .foregroundColor(Color("414BB2"))
-                                        .bold()
-                                }
-                                .frame(height: 40)
-                                .overlay(
-                                    RoundedRectangle(cornerRadius: 5)
-                                        .strokeBorder(.indigo, lineWidth: 1)
-                                )
-                                
-                                
-                                Button {
-                                    
-                                } label: {
-                                    Text("Accept")
-                                        .font(.caption)
-                                        .foregroundColor(.white)
-                                        .bold()
-                                }
-                                .padding()
-                                .frame(height: 40)
-                                .background(Color("414BB2", alpha: 1))
-                                .cornerRadius(5)
-                                
-                            }
-                            .padding(.top)
-                            .padding(.trailing)
                             
                         }
-                        .frame(height: 300)
                         
+                        // Component 6.4
+                        HStack {
+                            
+                            // Text SHOULD BE CHANGABLE
+                            Text("I got a new resto recommendation, let’s eat there!")
+                                .font(Font.custom("Fredoka-Light", size: 16))
+                                .foregroundColor(Color("PB-800"))                            
+                        }
+                        .padding(.top)
+                        
+                        // Component 6.5
+                        HStack {
+                            Text("INVITEES STATUS")
+                                .font(Font.custom("Fredoka-Medium", size: 12))
+                                .foregroundColor(Color("PB-800"))
+                            Spacer()
+                        }
+                        .padding(.top)
+                        
+                        // Component 6.6
+                        HStack {
+                            Button {
+                                // SHOULD NAVIGATE TO MEMBER DETAILS
+                            } label: {
+                                HStack {
+                                    
+                                    // "temporaryUsers" SHOULD BE CHANGABLE
+                                    ForEach (0 ..< temporaryUsers.count) { users in
+                                        if (users < 3) {
+                                            Image(systemName: "person.crop.circle.badge.clock.fill")
+                                                .font(Font.custom("Fredoka-Medium", size: 20))
+                                                .foregroundColor(Color("PB-300"))
+                                                .foregroundColor(.gray)
+                                        }
+                                    }
+                                }
+                                
+                                // "temporaryUsers" SHOULD BE CHANGABLE
+                                if (temporaryUsers.count > 3) {
+                                    Text("+\(temporaryUsers.count-3)")
+                                        .font(Font.custom("Fredoka-Medium", size: 12))
+                                        .foregroundColor(Color("PB-300"))
+                                }
+                            }
+                            Spacer()
+                        }
+                        .padding(.init(top: 2, leading: 0, bottom: 0, trailing: 0))
+                        
+                        // Component 6.7
+                        HStack (spacing: 14){
+                            
+                            Spacer()
+                            
+                            Button {
+                                
+                            } label: {
+                                Text("Decline")
+                            }.buttonStyle(BorderButton())
+                            
+                            Button {
+                                
+                            } label: {
+                                Text("Accept")
+                            }.buttonStyle(FillButton())
+                        }
                     }
-                    .padding(.bottom)
-                    .foregroundColor(Color("414BB2"))
-                    .border(.indigo)
+                    .padding()
+                    .frame(height: 590)
+                    
                 }
-                
+                .background(.white)
+                .cornerRadius(8)
+                .shadow(color: Color.black.opacity(0.2), radius: 3, x: 1, y: 2)
+                .padding(.bottom)
             }
-            
-            
+            .padding()
         }
     }
 }

@@ -9,6 +9,13 @@ import SwiftUI
 import CoreData
 
 struct Homepage: View {
+    init() {
+        let appearance = UINavigationBarAppearance()
+        let customColor = UIColor(named: "PB-800")!
+        appearance.titleTextAttributes = [.foregroundColor: customColor, .font: UIFont(name: "Fredoka-Medium", size: 22)!
+            ]
+        UINavigationBar.appearance().standardAppearance = appearance
+    }
     
     @Environment(\.managedObjectContext) private var viewContext
 
@@ -22,16 +29,17 @@ struct Homepage: View {
         NavigationView {
             
             VStack {
-                
                 Homepage1()
                 
                 Homepage2()
             
                 Homepage3()
+                    .padding(.top)
                 
                 Spacer()
                 
             }
+            .padding(24)
         }
         .navigationBarBackButtonHidden(true)
     }
