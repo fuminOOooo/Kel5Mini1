@@ -28,6 +28,7 @@
 		15D975D229F9413E0033D857 /* Proposenewpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975D129F9413E0033D857 /* Proposenewpage.swift */; };
 		15D975D429F9417A0033D857 /* Proposenewpage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975D329F9417A0033D857 /* Proposenewpage1.swift */; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 		15D975DB29FAD4510033D857 /* Proposenewpage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975DA29FAD4510033D857 /* Proposenewpage2.swift */; };
 		15D975DD29FADB920033D857 /* Proposenewpage3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975DC29FADB920033D857 /* Proposenewpage3.swift */; };
 		15D975DF29FB7BD60033D857 /* Proposenewpage4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975DE29FB7BD60033D857 /* Proposenewpage4.swift */; };
@@ -36,6 +37,8 @@
 		382123FE29FAE83C003B5002 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382123FD29FAE83C003B5002 /* CustomButton.swift */; };
 		382123FF29FAEF10003B5002 /* Fredoka.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 382123FB29FAD58D003B5002 /* Fredoka.ttf */; };
 >>>>>>> 9f578bad7b729fad74178041f092ef58524a0e0b
+=======
+>>>>>>> parent of 1a90ec5 (Proposenew View + Viewmodel)
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,7 @@
 		15D975D129F9413E0033D857 /* Proposenewpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage.swift; sourceTree = "<group>"; };
 		15D975D329F9417A0033D857 /* Proposenewpage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage1.swift; sourceTree = "<group>"; };
 <<<<<<< HEAD
+<<<<<<< HEAD
 		15D975DA29FAD4510033D857 /* Proposenewpage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage2.swift; sourceTree = "<group>"; };
 		15D975DC29FADB920033D857 /* Proposenewpage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage3.swift; sourceTree = "<group>"; };
 		15D975DE29FB7BD60033D857 /* Proposenewpage4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage4.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 		382123FD29FAE83C003B5002 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		38250DE129FA67380021746F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Kel5Mini1/Info.plist; sourceTree = SOURCE_ROOT; };
 >>>>>>> 9f578bad7b729fad74178041f092ef58524a0e0b
+=======
+>>>>>>> parent of 1a90ec5 (Proposenew View + Viewmodel)
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +153,6 @@
 				382123FB29FAD58D003B5002 /* Fredoka.ttf */,
 				157EB61D29EFA7A00056F675 /* Persistence.swift */,
 				157EB61F29EFA7A00056F675 /* Kel5Mini1.xcdatamodeld */,
-				15D975E029FB7E7C0033D857 /* Features */,
 				157EB61A29EFA7A00056F675 /* Preview Content */,
 			);
 			path = Kel5Mini1;
@@ -249,13 +254,11 @@
 			children = (
 				15D975D129F9413E0033D857 /* Proposenewpage.swift */,
 				15D975D329F9417A0033D857 /* Proposenewpage1.swift */,
-				15D975DA29FAD4510033D857 /* Proposenewpage2.swift */,
-				15D975DC29FADB920033D857 /* Proposenewpage3.swift */,
-				15D975DE29FB7BD60033D857 /* Proposenewpage4.swift */,
 			);
 			path = Proposenewpage;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 <<<<<<< HEAD
 		15D975E029FB7E7C0033D857 /* Features */ = {
 			isa = PBXGroup;
@@ -281,6 +284,8 @@
 >>>>>>> 9f578bad7b729fad74178041f092ef58524a0e0b
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> parent of 1a90ec5 (Proposenew View + Viewmodel)
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -414,16 +419,17 @@
 			files = (
 				15D975D429F9417A0033D857 /* Proposenewpage1.swift in Sources */,
 				157EB61E29EFA7A00056F675 /* Persistence.swift in Sources */,
-				15D975DF29FB7BD60033D857 /* Proposenewpage4.swift in Sources */,
 				15BF953D29F31AF900CA517E /* Homepage2.swift in Sources */,
-				15D975E329FB7F250033D857 /* Proposenewpage Viewmodel.swift in Sources */,
 				15D975CB29F933170033D857 /* Proposedpage.swift in Sources */,
 <<<<<<< HEAD
 				15BF953829F2E70F00CA517E /* AppColor.swift in Sources */,
+<<<<<<< HEAD
 				15D975DB29FAD4510033D857 /* Proposenewpage2.swift in Sources */,
 =======
 				382123FE29FAE83C003B5002 /* CustomButton.swift in Sources */,
 >>>>>>> 9f578bad7b729fad74178041f092ef58524a0e0b
+=======
+>>>>>>> parent of 1a90ec5 (Proposenew View + Viewmodel)
 				157EB62129EFA7A00056F675 /* Kel5Mini1.xcdatamodeld in Sources */,
 				15D975D229F9413E0033D857 /* Proposenewpage.swift in Sources */,
 				15BF953F29F333F700CA517E /* Homepage3.swift in Sources */,
@@ -434,7 +440,6 @@
 				157EB61529EFA79F0056F675 /* Kel5Mini1App.swift in Sources */,
 				15BF953B29F2F80900CA517E /* Homepage1.swift in Sources */,
 				15D975CF29F938300033D857 /* Proposed2.swift in Sources */,
-				15D975DD29FADB920033D857 /* Proposenewpage3.swift in Sources */,
 				15D975C829F90E620033D857 /* Upcoming2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
