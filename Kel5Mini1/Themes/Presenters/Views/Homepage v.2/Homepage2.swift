@@ -67,7 +67,7 @@ struct Homepage2: View {
                         //code here
                     } label: {
                         Text("Find Topic 🤩")
-                            .frame(minWidth: 335)
+                            .frame(minWidth: 300)
                     }.buttonStyle(FillButton())
                 }
                 
@@ -75,7 +75,7 @@ struct Homepage2: View {
             .padding()
             .background(Color("PB-50"))
             .cornerRadius(8)
-//            .shadow(color: Color.black.opacity(0.1), radius: 3, x: 1, y: 2)
+            .shadow(color: Color.black.opacity(0.1), radius: 3, x: 1, y: 2)
         }
     }
 }

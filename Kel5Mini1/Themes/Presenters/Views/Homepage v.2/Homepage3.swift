@@ -98,7 +98,7 @@ struct Homepage3: View {
                         //code here
                     } label: {
                         Text("Decline")
-                            .frame(minWidth: 145)
+                            .frame(minWidth: 125)
                     }
                     .buttonStyle(BorderButton())
                     Spacer()
@@ -106,7 +106,7 @@ struct Homepage3: View {
                         //code here
                     } label: {
                         Text("Accept")
-                            .frame(minWidth: 145)
+                            .frame(minWidth: 125)
                     }
                     .buttonStyle(FillButton())
                 }
