@@ -14,6 +14,30 @@ struct Homepage2: View {
     @State var temporaryUsers: [String] = ["Hai", "Halo", "Hey", "Hello", "Ola"]
     
     var body: some View {
+        VStack{
+            //upcoming navigation
+            HStack{
+                Text ("UPCOMING EVENT")
+                    .font(Font.custom("Fredoka-Medium", size: 14))
+                    .foregroundColor(Color("Gray4"))
+                Spacer()
+                NavigationLink {
+                    Upcoming()
+                } label: {
+                    Text ("See all")
+                        .font(Font.custom("Fredoka", size: 16))
+                        .foregroundColor(Color("Secondary"))
+                }
+            }
+            .padding(.top)
+            
+            //card
+            VStack(alignment: .leading){
+                HStack{
+                    
+                }
+            }
+        }
         
         VStack {
             
