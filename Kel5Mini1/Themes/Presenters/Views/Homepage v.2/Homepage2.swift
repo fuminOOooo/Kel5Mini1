@@ -19,7 +19,7 @@ struct Homepage2: View {
             HStack{
                 Text ("UPCOMING EVENT")
                     .font(Font.custom("Fredoka-Medium", size: 14))
-                    .foregroundColor(Color("Gray4"))
+                    .foregroundColor(Color("Gray3"))
                 Spacer()
                 NavigationLink {
                     Upcoming()
@@ -54,7 +54,7 @@ struct Homepage2: View {
                 VStack(alignment: .leading, spacing: 4){
                     Text("It's Mealtime!")
                         .font(Font.custom("Fredoka-Medium", size: 17))
-                    .foregroundColor(.gray)
+                    .foregroundColor(Color("Grey"))
                     
                     Text("This iftar, Dary will pay for everything!")
                         .font(Font.custom("Fredoka-Regular", size: 17))
