@@ -10,6 +10,21 @@ import Combine
 
 class HomepageViewModel: ObservableObject {
     
+    // For choosing which calendar should be selected
+    
+    @Published var currentCalendar: Int = 0
+    
+    struct oneCalendar{
+        var calendarName: String
+        var calendarOwner: String
+        var calendarMembers: [String]
+    }
+    
+    @Published var calendars: [oneCalendar] = [
+        oneCalendar(calendarName: "Mitun's Family", calendarOwner: "Mitun", calendarMembers: ["Hai", "Halo", "Hey", "Hello", "Ola"])
+    ]
+    
+    
     @Published var calendarsAreShown: Bool = false
     
 }

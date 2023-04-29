@@ -12,6 +12,7 @@
 		1551942029FB9DAA00A31780 /* Proposenewpage3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551941F29FB9DAA00A31780 /* Proposenewpage3.swift */; };
 		1551942229FBC73D00A31780 /* Proposenewpage4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551942129FBC73D00A31780 /* Proposenewpage4.swift */; };
 		1551942429FC417100A31780 /* Homepage Viewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551942329FC417100A31780 /* Homepage Viewmodel.swift */; };
+		1551942829FCEE1500A31780 /* Homepage Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551942729FCEE1500A31780 /* Homepage Model.swift */; };
 		157EB61529EFA79F0056F675 /* Kel5Mini1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EB61429EFA79F0056F675 /* Kel5Mini1App.swift */; };
 		157EB61729EFA79F0056F675 /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EB61629EFA79F0056F675 /* Homepage.swift */; };
 		157EB61929EFA7A00056F675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157EB61829EFA7A00056F675 /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		1551941F29FB9DAA00A31780 /* Proposenewpage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage3.swift; sourceTree = "<group>"; };
 		1551942129FBC73D00A31780 /* Proposenewpage4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage4.swift; sourceTree = "<group>"; };
 		1551942329FC417100A31780 /* Homepage Viewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Homepage Viewmodel.swift"; sourceTree = "<group>"; };
+		1551942729FCEE1500A31780 /* Homepage Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Homepage Model.swift"; sourceTree = "<group>"; };
 		157EB61129EFA79F0056F675 /* Kel5Mini1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kel5Mini1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		157EB61429EFA79F0056F675 /* Kel5Mini1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kel5Mini1App.swift; sourceTree = "<group>"; };
 		157EB61629EFA79F0056F675 /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
@@ -121,6 +123,22 @@
 			path = Features;
 			sourceTree = "<group>";
 		};
+		1551942529FCEDE300A31780 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1551942629FCEDF000A31780 /* Constants */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1551942629FCEDF000A31780 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				1551942729FCEE1500A31780 /* Homepage Model.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		157EB60829EFA79F0056F675 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +162,7 @@
 		157EB61329EFA79F0056F675 /* Kel5Mini1 */ = {
 			isa = PBXGroup;
 			children = (
+				1551942529FCEDE300A31780 /* Core */,
 				382123FC29FAE805003B5002 /* Style */,
 				38250DE129FA67380021746F /* Info.plist */,
 				15BF953229F2E68700CA517E /* Application */,
@@ -404,6 +423,7 @@
 				15D975D429F9417A0033D857 /* Proposenewpage1.swift in Sources */,
 				157EB61E29EFA7A00056F675 /* Persistence.swift in Sources */,
 				15BF953D29F31AF900CA517E /* Homepage2.swift in Sources */,
+				1551942829FCEE1500A31780 /* Homepage Model.swift in Sources */,
 				15D975CB29F933170033D857 /* Proposedpage.swift in Sources */,
 				382123FE29FAE83C003B5002 /* CustomButton.swift in Sources */,
 				1551942429FC417100A31780 /* Homepage Viewmodel.swift in Sources */,

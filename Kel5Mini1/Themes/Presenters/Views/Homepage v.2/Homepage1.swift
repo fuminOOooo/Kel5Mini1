@@ -17,8 +17,6 @@ struct Homepage1: View {
     
     @State var calendarSelection: Bool = false
     
-    @State var temporaryUsers: [String] = ["Hai", "Halo", "Hey", "Hello", "Ola"]
-    
     var body: some View {
         VStack (spacing: 4) {
             
@@ -29,32 +27,64 @@ struct Homepage1: View {
                 Button {
                     // SHOULD NAVIGATE TO CALENDARS MODAL
                     calendarSelection.toggle()
+                    
                 } label: {
                     
                     // "Mitun's Family" SHOULD BE CHANGABLE
-                    Text("Mitun's Family")
+                    Text(HpVM.calendars[HpVM.currentCalendar].calendarName)
                         .font(Font.custom("Fredoka-Bold", size: 26))
                         .foregroundColor(Color("PB-800"))
                     
                     Image(systemName: "chevron.down")
                         .font(Font.custom("Fredoka-Bold", size: 16))
                         .foregroundColor(Color("PB-800"))
+                    
                 }
                 .sheet(isPresented: $calendarSelection, content: {
                     
                     GeometryReader { geometry in
+                        
                         VStack {
-                            Text("Families")
-                                .font(Font.custom("Fredoka-Medium", size: 26))
-                                .foregroundColor(Color("PB-800"))
                             
+                            HStack {
+                                
+                                Spacer()
+                                
+                                Text("Families")
+                                    .font(Font.custom("Fredoka-Medium", size: 20))
+                                    .foregroundColor(Color("PB-800"))
+                                
+                                Spacer()
+                                
+                            }
                             .padding()
                             
-                            Spacer()
+//                            ScrollView {
+//                                
+//                                List {
+//                                    
+//                                    ForEach(HpVM.calendars, id: \.self) { calendars in
+//                                        
+//                                        Text(calendars.calendarName)
+//                                        
+//                                    }
+//                                    
+//                                }
+//                                
+//                            }
+                            
+                            Button {
+                                
+                            } label: {
+                                Text("+ Add another family calendar")
+                                    .font(Font.custom("Fredoka-Regular", size: 16))
+                                    .foregroundColor(Color("Secondary"))
+                            }
+
+                            
                             
                         }
-                        .frame(maxWidth: .infinity, maxHeight: UIScreen.main.bounds.height * 0.5)
-                                    .background(Color.white)
+                        .presentationDetents([.medium])
                     }
                     
                 })
@@ -84,7 +114,7 @@ struct Homepage1: View {
                     HStack (spacing: -2) {
                         
                         // "temporaryUsers" SHOULD BE CHANGABLE
-                        ForEach (0 ..< temporaryUsers.count) { users in
+                        ForEach (0 ..< HpVM.calendars[HpVM.currentCalendar].calendarMembers.count) { users in
                             if (users < 3) {
                                 Image(systemName: "person.circle.fill")
                                     .resizable()
@@ -96,8 +126,8 @@ struct Homepage1: View {
                     }
                     
                     // "temporaryUsers" SHOULD BE CHANGABLE
-                    if (temporaryUsers.count > 3) {
-                        Text("\(temporaryUsers.count-3)+")
+                    if (HpVM.calendars[HpVM.currentCalendar].calendarMembers.count > 3) {
+                        Text("\(HpVM.calendars[HpVM.currentCalendar].calendarMembers.count-3)+")
                             .font(Font.custom("Fredoka", size: 14))
                             .foregroundColor(Color("PB-800"))
                     }
@@ -108,15 +138,5 @@ struct Homepage1: View {
             }
             
         }
-//        .onAppear{
-//            for family: String in UIFont.familyNames
-//                    {
-//                        print(family)
-//                        for names: String in UIFont.fontNames(forFamilyName: family)
-//                        {
-//                            print("== \(names)")
-//                        }
-//                    }
-//        }
     }
 }
