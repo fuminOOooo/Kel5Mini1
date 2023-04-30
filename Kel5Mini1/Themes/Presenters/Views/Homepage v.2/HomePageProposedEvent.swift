@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import CoreData
 
-struct Homepage3: View {
+struct HomePageProposedEvent: View {
     
     @State var temporaryUsers: [String] = ["Hai", "Halo", "Hey", "Hello", "Ola"]
     

@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import CoreData
 
-struct Proposenewpage4: View {
+struct             ProposeNewEventStartTime: View {
     
     @State var temporaryUsers: [String] = ["Hai", "Halo", "Hey", "Hello", "Ola"]
     
@@ -25,8 +25,8 @@ struct Proposenewpage4: View {
                 
                 Spacer()
                 
-                DatePicker("", selection: $selectedDate, displayedComponents: .hourAndMinute)
-                            .labelsHidden()
+//                DatePicker("", selection: $selectedDate, displayedComponents: .hourAndMinute)
+//                            .labelsHidden()
                 
             }
             

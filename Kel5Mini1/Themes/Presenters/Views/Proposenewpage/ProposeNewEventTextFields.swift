@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import CoreData
 
-struct Proposenewpage3: View {
+struct ProposeNewEventTextFields: View {
     
     @State var temporaryUsers: [String] = ["Hai", "Halo", "Hey", "Hello", "Ola"]
     @State private var selectedDate = Date()

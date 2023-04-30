@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import CoreData
 
-struct Homepage1: View {
+struct HomePageHeader: View {
     
     @State var temporaryUsers: [String] = ["Hai", "Halo", "Hey", "Hello", "Ola"]
     
@@ -39,7 +39,7 @@ struct Homepage1: View {
                 
                 //Add Calendar Button
                 NavigationLink {
-                    Proposenewpage()
+                    ProposeNewEvent()
                 } label: {
                     Image(systemName: "plus")
                         .foregroundColor(.black)

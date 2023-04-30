@@ -23,11 +23,11 @@ struct Homepage: View {
             
             VStack {
                 
-                Homepage1()
+                HomePageHeader()
                 
-                Homepage2()
+                HomepageUpcomingEvent()
             
-                Homepage3()
+                HomePageProposedEvent()
                 
                 Spacer()
                 
