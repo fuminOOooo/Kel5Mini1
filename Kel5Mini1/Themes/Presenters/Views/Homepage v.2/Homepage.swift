@@ -46,9 +46,3 @@ struct Homepage: View {
 
     
 }
-
-struct Home_Previews: PreviewProvider {
-    static var previews: some View {
-        Homepage().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-    }
-}

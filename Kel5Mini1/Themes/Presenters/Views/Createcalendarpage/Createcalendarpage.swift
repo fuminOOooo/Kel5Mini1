@@ -1,0 +1,47 @@
+//
+//  Upcomingpage.swift
+//  Kel5Mini1
+//
+//  Created by Elvis Susanto on 29/04/23.
+//
+
+import SwiftUI
+import CoreData
+
+struct Createcalendarpage: View {
+    
+    @StateObject var CcVM = CreatecalendarViewModel()
+    
+    @Environment(\.managedObjectContext) private var viewContext
+
+    @FetchRequest(
+        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
+        animation: .default)
+    private var items: FetchedResults<Item>
+
+    var body:some View {
+        
+            VStack {
+                
+                Spacer()
+                
+                Createcalendarpage1(CcVM: CcVM)
+                
+                Createcalendarpage2(CcVM: CcVM)
+                
+                Spacer()
+                
+            }
+            .navigationTitle("Create New Calendar")
+            .padding()
+            .navigationBarBackButtonHidden(true)
+    }
+
+    
+}
+
+struct Home_Previews: PreviewProvider {
+    static var previews: some View {
+        Createcalendarpage().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    }
+}
