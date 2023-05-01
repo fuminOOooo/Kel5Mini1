@@ -18,7 +18,7 @@ class  CalendarManager : ObservableObject {
     }
 
     func getEvents(from startDate: Date, to endDate: Date) -> [EKEvent] {
-        let predicate = eventStore.predicateForEvents(withStart: startDate, end: endDate, calendars: nil)
+        let predicate = eventStore.predicateForEvents(withStart: startDate, end: endDate, calendars: [self.eventStore.defaultCalendarForNewEvents!])
 //        print(" ini \(predicate)")
         return eventStore.events(matching: predicate)
     }
@@ -78,12 +78,12 @@ struct ContentView: View {
     @State var eventStore = EKEventStore()
     @State var showEventDeleter = false
     
+    
     var body: some View {
            
            Button ("add event to calender") {
                calendarManager.addEvent(startDate: Date(), startTime: Date(), title: "makan ajaa",notes: "makan di cafe")
            }
-           
             List {
                 ForEach(events, id: \.self) { event in
                     HStack{

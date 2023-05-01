@@ -7,15 +7,17 @@
 
 import SwiftUI
 import CoreData
+import EventKit
 
 struct Proposed: View {
-    
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
         sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
         animation: .default)
     private var items: FetchedResults<Item>
+    
+    @Binding var events: [EKEvent]
 
     var body:some View {
         
@@ -23,7 +25,7 @@ struct Proposed: View {
                 
                 Proposed1()
                 
-                Proposed2()
+                Proposed2(events: $events)
                 
                 Spacer()
                 

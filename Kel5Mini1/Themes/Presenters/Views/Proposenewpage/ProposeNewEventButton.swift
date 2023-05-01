@@ -11,7 +11,7 @@ import CoreData
 
 struct ProposeNewEventButton: View {
     
-    @StateObject var calendarManager : CalendarManager = CalendarManager()
+    @EnvironmentObject var calendarManager: CalendarManager
     @Environment(\.dismiss) private var dismiss
     
     var selectedDate: Date

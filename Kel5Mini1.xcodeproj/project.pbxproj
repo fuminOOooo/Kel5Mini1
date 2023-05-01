@@ -31,7 +31,6 @@
 		15D975DB29FAD4510033D857 /* ProposeNewEventDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975DA29FAD4510033D857 /* ProposeNewEventDatePicker.swift */; };
 		15D975DD29FADB920033D857 /* ProposeNewEventTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975DC29FADB920033D857 /* ProposeNewEventTextFields.swift */; };
 		15D975DF29FB7BD60033D857 /* ProposeNewEventStartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975DE29FB7BD60033D857 /* ProposeNewEventStartTime.swift */; };
-		15D975E329FB7F250033D857 /* Proposenewpage Viewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975E229FB7F250033D857 /* Proposenewpage Viewmodel.swift */; };
 		46D287FA29FF9E47008C6CCB /* CalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D287F929FF9E47008C6CCB /* CalendarManager.swift */; };
 		46D287FC29FFAD42008C6CCB /* ProposeNewEventButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D287FB29FFAD42008C6CCB /* ProposeNewEventButton.swift */; };
 /* End PBXBuildFile section */
@@ -81,7 +80,6 @@
 		15D975DA29FAD4510033D857 /* ProposeNewEventDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposeNewEventDatePicker.swift; sourceTree = "<group>"; };
 		15D975DC29FADB920033D857 /* ProposeNewEventTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposeNewEventTextFields.swift; sourceTree = "<group>"; };
 		15D975DE29FB7BD60033D857 /* ProposeNewEventStartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposeNewEventStartTime.swift; sourceTree = "<group>"; };
-		15D975E229FB7F250033D857 /* Proposenewpage Viewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Proposenewpage Viewmodel.swift"; sourceTree = "<group>"; };
 		46D287F929FF9E47008C6CCB /* CalendarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarManager.swift; sourceTree = "<group>"; };
 		46D287FB29FFAD42008C6CCB /* ProposeNewEventButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposeNewEventButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -269,7 +267,6 @@
 		15D975E129FB7EF80033D857 /* Viewmodels */ = {
 			isa = PBXGroup;
 			children = (
-				15D975E229FB7F250033D857 /* Proposenewpage Viewmodel.swift */,
 				46D287F929FF9E47008C6CCB /* CalendarManager.swift */,
 			);
 			path = Viewmodels;
@@ -410,7 +407,6 @@
 				15D975DF29FB7BD60033D857 /* ProposeNewEventStartTime.swift in Sources */,
 				46D287FA29FF9E47008C6CCB /* CalendarManager.swift in Sources */,
 				15BF953D29F31AF900CA517E /* HomepageUpcomingEvent.swift in Sources */,
-				15D975E329FB7F250033D857 /* Proposenewpage Viewmodel.swift in Sources */,
 				15D975CB29F933170033D857 /* Proposedpage.swift in Sources */,
 				15BF953829F2E70F00CA517E /* AppColor.swift in Sources */,
 				15D975DB29FAD4510033D857 /* ProposeNewEventDatePicker.swift in Sources */,

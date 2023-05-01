@@ -9,12 +9,14 @@ import SwiftUI
 
 @main
 struct Kel5Mini1App: App {
+    @StateObject var calendarManager : CalendarManager = CalendarManager()
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
             Homepage()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environmentObject(calendarManager)
 //            ContentView()
         }
     }

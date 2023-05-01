@@ -8,10 +8,13 @@
 import Foundation
 import SwiftUI
 import CoreData
+import EventKit
 
 struct HomePageProposedEvent: View {
     
+    @EnvironmentObject var calendarManager: CalendarManager
     @State var temporaryUsers: [String] = ["Hai", "Halo", "Hey", "Hello", "Ola"]
+    @State var events = [EKEvent]()
     
     var body: some View {
         
@@ -29,14 +32,12 @@ struct HomePageProposedEvent: View {
                 // SHOULD NAVIGATE TO PROPOSED EVENTS LIST
                 
                 NavigationLink {
-                    Proposed()
+                    Proposed(events: $events)
                 } label: {
                     Text ("See all")
                         .foregroundColor(Color("414BB2"))
                         .font(.subheadline)
                 }
-                
-                
             }
             .padding(.trailing)
             .padding(.leading)
@@ -73,9 +74,11 @@ struct HomePageProposedEvent: View {
                             
                             // Component 6.2
                             HStack {
-                                
                                 // "Monday, 17 Apr" SHOULD BE CHANGABLE
-                                Text("Monday, 17 Apr")
+                                //  Text("Monday, 17 Apr")
+                                //  .bold()
+                                //  .font(.title)
+                                Text(events.count > 0 ? "\(formattedDate(date: events[0].startDate))" : "")
                                     .bold()
                                     .font(.title)
                                 
@@ -88,9 +91,12 @@ struct HomePageProposedEvent: View {
                             HStack {
                                 
                                 // "at 09.00" SHOULD BE CHANGABLE
-                                Text("at 09.00")
+//                                Text("at 09.00")
+//                                    .bold()
+//                                    .font(.title2)
+                                Text(events.count > 0 ? "\(formattedTime(date: events[0].startDate))" : "")
                                     .bold()
-                                    .font(.title2)
+                                    .font(.title)
                                 
                                 Spacer()
                                 
@@ -106,7 +112,7 @@ struct HomePageProposedEvent: View {
                     HStack {
                         
                         // Text SHOULD BE CHANGABLE
-                        Text("I got THR guyss, let's iftar together!!!")
+                        Text(events.count > 0 ? "\(events[0].notes ?? "")" : "")
                             .fontWeight(.light)
                             .font(.subheadline)
                         
@@ -180,7 +186,6 @@ struct HomePageProposedEvent: View {
                                 .strokeBorder(.indigo, lineWidth: 1)
                         )
                         
-                        
                         Button {
                             
                         } label: {
@@ -207,10 +212,49 @@ struct HomePageProposedEvent: View {
             .border(.indigo)
             .padding(.trailing)
             .padding(.leading)
-    
+            
             
         }
         .padding(.top)
-            
+        
+        // pake view model
+        .onAppear{
+            calendarManager.requestAccess { granted in
+                if granted {
+                    fetchEvents()
+                    //                    print(events)
+                    //                    print(events[1].notes!)
+                }
+            }
+        }
+        .onReceive(NotificationCenter.default.publisher(for: .EKEventStoreChanged)) { _ in
+            fetchEvents()
+        }
+    }
+    
+    func fetchEvents() {
+        let startDate = Date()
+        let endDate = Calendar.current.date(byAdding: .month, value: 1, to: startDate)!
+        events = calendarManager.getEvents(from: startDate, to: endDate)
+        
+        events = events.sorted { (event1, event2) -> Bool in
+            return event1.startDate.compare(event2.startDate) == .orderedAscending
+        }
+        
+        //        for event in events {
+        //            print(event.title!)
+        //        }
+        //        print(events)
+    }
+    
+    func formattedDate(date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEEE, d MMM"
+        return formatter.string(from: date)
+    }
+    func formattedTime(date: Date) -> String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "HH.mm"
+        return formatter.string(from: date)
     }
 }
