@@ -9,10 +9,13 @@ import Foundation
 import SwiftUI
 import CoreData
 
-struct             ProposeNewEventDatePicker: View {
+struct ProposeNewEventDatePicker: View {
+    
+    @EnvironmentObject var CalendarManagerPropose : CalendarManager
     
     @State var temporaryUsers: [String] = ["Hai", "Halo", "Hey", "Hello", "Ola"]
-    @State private var selectedDate = Date()
+    
+    @Binding var selectedDate: Date
     
     var body: some View {
         VStack (spacing: 4) {

@@ -13,7 +13,8 @@ struct ProposeNewEventTextFields: View {
     
     @State var temporaryUsers: [String] = ["Hai", "Halo", "Hey", "Hello", "Ola"]
     @State private var selectedDate = Date()
-    @State private var eventName: String = ""
+    @Binding var eventName: String
+    @Binding var eventDesc: String
     
     var body: some View {
         VStack (spacing: 4) {
@@ -29,7 +30,7 @@ struct ProposeNewEventTextFields: View {
             Divider()
             
             // Component 5
-            TextField("Add description", text: $eventName)
+            TextField("Add description", text: $eventDesc)
                 .font(.subheadline)
                 .foregroundColor(Color("C7C7CC"))
                 .bold()

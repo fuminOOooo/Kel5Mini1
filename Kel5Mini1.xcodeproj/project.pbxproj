@@ -28,10 +28,12 @@
 		15D975CF29F938300033D857 /* Proposed2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975CE29F938300033D857 /* Proposed2.swift */; };
 		15D975D229F9413E0033D857 /* ProposeNewEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975D129F9413E0033D857 /* ProposeNewEvent.swift */; };
 		15D975D429F9417A0033D857 /* ProposeNewEventBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975D329F9417A0033D857 /* ProposeNewEventBackButton.swift */; };
-		15D975DB29FAD4510033D857 /* 			ProposeNewEventDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975DA29FAD4510033D857 /* 			ProposeNewEventDatePicker.swift */; };
+		15D975DB29FAD4510033D857 /* ProposeNewEventDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975DA29FAD4510033D857 /* ProposeNewEventDatePicker.swift */; };
 		15D975DD29FADB920033D857 /* ProposeNewEventTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975DC29FADB920033D857 /* ProposeNewEventTextFields.swift */; };
-		15D975DF29FB7BD60033D857 /* 			ProposeNewEventStartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975DE29FB7BD60033D857 /* 			ProposeNewEventStartTime.swift */; };
+		15D975DF29FB7BD60033D857 /* ProposeNewEventStartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975DE29FB7BD60033D857 /* ProposeNewEventStartTime.swift */; };
 		15D975E329FB7F250033D857 /* Proposenewpage Viewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975E229FB7F250033D857 /* Proposenewpage Viewmodel.swift */; };
+		46D287FA29FF9E47008C6CCB /* CalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D287F929FF9E47008C6CCB /* CalendarManager.swift */; };
+		46D287FC29FFAD42008C6CCB /* ProposeNewEventButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D287FB29FFAD42008C6CCB /* ProposeNewEventButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,10 +78,12 @@
 		15D975CE29F938300033D857 /* Proposed2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposed2.swift; sourceTree = "<group>"; };
 		15D975D129F9413E0033D857 /* ProposeNewEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposeNewEvent.swift; sourceTree = "<group>"; };
 		15D975D329F9417A0033D857 /* ProposeNewEventBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposeNewEventBackButton.swift; sourceTree = "<group>"; };
-		15D975DA29FAD4510033D857 /* 			ProposeNewEventDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "\t\t\tProposeNewEventDatePicker.swift"; sourceTree = "<group>"; };
+		15D975DA29FAD4510033D857 /* ProposeNewEventDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposeNewEventDatePicker.swift; sourceTree = "<group>"; };
 		15D975DC29FADB920033D857 /* ProposeNewEventTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposeNewEventTextFields.swift; sourceTree = "<group>"; };
-		15D975DE29FB7BD60033D857 /* 			ProposeNewEventStartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "\t\t\tProposeNewEventStartTime.swift"; sourceTree = "<group>"; };
+		15D975DE29FB7BD60033D857 /* ProposeNewEventStartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposeNewEventStartTime.swift; sourceTree = "<group>"; };
 		15D975E229FB7F250033D857 /* Proposenewpage Viewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Proposenewpage Viewmodel.swift"; sourceTree = "<group>"; };
+		46D287F929FF9E47008C6CCB /* CalendarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarManager.swift; sourceTree = "<group>"; };
+		46D287FB29FFAD42008C6CCB /* ProposeNewEventButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposeNewEventButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,9 +250,10 @@
 			children = (
 				15D975D129F9413E0033D857 /* ProposeNewEvent.swift */,
 				15D975D329F9417A0033D857 /* ProposeNewEventBackButton.swift */,
-				15D975DA29FAD4510033D857 /* 			ProposeNewEventDatePicker.swift */,
+				15D975DA29FAD4510033D857 /* ProposeNewEventDatePicker.swift */,
 				15D975DC29FADB920033D857 /* ProposeNewEventTextFields.swift */,
-				15D975DE29FB7BD60033D857 /* 			ProposeNewEventStartTime.swift */,
+				15D975DE29FB7BD60033D857 /* ProposeNewEventStartTime.swift */,
+				46D287FB29FFAD42008C6CCB /* ProposeNewEventButton.swift */,
 			);
 			path = Proposenewpage;
 			sourceTree = "<group>";
@@ -265,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				15D975E229FB7F250033D857 /* Proposenewpage Viewmodel.swift */,
+				46D287F929FF9E47008C6CCB /* CalendarManager.swift */,
 			);
 			path = Viewmodels;
 			sourceTree = "<group>";
@@ -401,15 +407,17 @@
 			files = (
 				15D975D429F9417A0033D857 /* ProposeNewEventBackButton.swift in Sources */,
 				157EB61E29EFA7A00056F675 /* Persistence.swift in Sources */,
-				15D975DF29FB7BD60033D857 /* 			ProposeNewEventStartTime.swift in Sources */,
+				15D975DF29FB7BD60033D857 /* ProposeNewEventStartTime.swift in Sources */,
+				46D287FA29FF9E47008C6CCB /* CalendarManager.swift in Sources */,
 				15BF953D29F31AF900CA517E /* HomepageUpcomingEvent.swift in Sources */,
 				15D975E329FB7F250033D857 /* Proposenewpage Viewmodel.swift in Sources */,
 				15D975CB29F933170033D857 /* Proposedpage.swift in Sources */,
 				15BF953829F2E70F00CA517E /* AppColor.swift in Sources */,
-				15D975DB29FAD4510033D857 /* 			ProposeNewEventDatePicker.swift in Sources */,
+				15D975DB29FAD4510033D857 /* ProposeNewEventDatePicker.swift in Sources */,
 				157EB62129EFA7A00056F675 /* Kel5Mini1.xcdatamodeld in Sources */,
 				15D975D229F9413E0033D857 /* ProposeNewEvent.swift in Sources */,
 				15BF953F29F333F700CA517E /* HomePageProposedEvent.swift in Sources */,
+				46D287FC29FFAD42008C6CCB /* ProposeNewEventButton.swift in Sources */,
 				15BF954429F7DEF600CA517E /* Upcoming1.swift in Sources */,
 				15D975CD29F9380D0033D857 /* Proposed1.swift in Sources */,
 				15BF954129F7DD2000CA517E /* Upcomingpage.swift in Sources */,
@@ -505,6 +513,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "JOJO CUTE KLO SENYUM";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -559,6 +568,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "JOJO CUTE KLO SENYUM";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;

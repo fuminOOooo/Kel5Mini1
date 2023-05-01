@@ -15,6 +15,7 @@ struct Kel5Mini1App: App {
         WindowGroup {
             Homepage()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
+//            ContentView()
         }
     }
 }

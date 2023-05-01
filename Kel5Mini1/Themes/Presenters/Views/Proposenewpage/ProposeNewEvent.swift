@@ -17,19 +17,29 @@ struct ProposeNewEvent: View {
         animation: .default)
     private var items: FetchedResults<Item>
     
+    @State private var selectedDate = Date()
+    @State private var selectedTime = Date()
+    @State private var eventName: String = ""
+    @State private var eventDesc: String = ""
+    
+    
+    
     var body:some View {
         
         VStack {
             
             ProposeNewEventBackButton()
             
-            ProposeNewEventDatePicker()
-            
-            ProposeNewEventTextFields()
+            ProposeNewEventDatePicker(selectedDate: $selectedDate)
+                
+            ProposeNewEventTextFields(eventName: $eventName, eventDesc: $eventDesc)
             
             Spacer()
             
-            ProposeNewEventStartTime()
+            ProposeNewEventStartTime(selectedTime: $selectedTime)
+            
+            ProposeNewEventButton(selectedDate: selectedDate, selectedTime: selectedTime,
+                                  eventName: eventName, eventDesc: eventDesc)
             
         }
         .navigationTitle("Propose New Event")

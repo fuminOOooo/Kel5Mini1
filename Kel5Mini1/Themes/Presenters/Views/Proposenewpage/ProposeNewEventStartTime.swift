@@ -9,9 +9,11 @@ import Foundation
 import SwiftUI
 import CoreData
 
-struct             ProposeNewEventStartTime: View {
+struct ProposeNewEventStartTime: View {
     
     @State var temporaryUsers: [String] = ["Hai", "Halo", "Hey", "Hello", "Ola"]
+    
+    @Binding var selectedTime: Date
     
     var body: some View {
         VStack (spacing: 4) {
@@ -25,12 +27,12 @@ struct             ProposeNewEventStartTime: View {
                 
                 Spacer()
                 
-//                DatePicker("", selection: $selectedDate, displayedComponents: .hourAndMinute)
-//                            .labelsHidden()
-                
+                DatePicker("", selection: $selectedTime, displayedComponents: .hourAndMinute)
+                            .labelsHidden()
             }
             
             
         }
     }
+    
 }

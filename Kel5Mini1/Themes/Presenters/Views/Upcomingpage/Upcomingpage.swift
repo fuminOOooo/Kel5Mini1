@@ -36,7 +36,7 @@ struct Upcoming: View {
     
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct UpcomingView_Previews: PreviewProvider {
     static var previews: some View {
         Upcoming().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
