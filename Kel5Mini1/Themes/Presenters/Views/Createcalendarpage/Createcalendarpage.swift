@@ -31,6 +31,8 @@ struct Createcalendarpage: View {
                 
                 Spacer()
                 
+                Createcalendarpage3(CcVM: CcVM)
+                
             }
             .navigationTitle("Create New Calendar")
             .padding()

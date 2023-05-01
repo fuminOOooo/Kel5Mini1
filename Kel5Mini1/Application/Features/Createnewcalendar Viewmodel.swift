@@ -10,6 +10,6 @@ import Combine
 
 class CreatecalendarViewModel: ObservableObject {
     
-    
+    @Published var testvar : String = ""
     
 }

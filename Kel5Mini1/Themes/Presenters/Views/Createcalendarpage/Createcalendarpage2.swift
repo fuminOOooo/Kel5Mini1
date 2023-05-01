@@ -39,13 +39,22 @@ struct Createcalendarpage2: View {
                 Button {
                     
                 } label: {
-                    Text("Create Calendar")
-                        .foregroundColor(.white)
-                        .background(Color("Secondary"))
-                        .cornerRadius(6)
-                        .font(Font.custom("Fredoka-Medium", size: 16))
-                        .frame(maxWidth: .infinity)
+                    if (tempCalendarName == "") {
+                        Text("Create Calendar")
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity)
+                            .cornerRadius(6)
+                            .font(Font.custom("Fredoka-Medium", size: 16))
+                    } else {
+                        Text("Create Calendar")
+                            .foregroundColor(.white)
+                            .background(Color("Secondary"))
+                            .cornerRadius(6)
+                            .font(Font.custom("Fredoka-Medium", size: 16))
+                            .frame(maxWidth: .infinity)
+                    }
                 }
+                .disabled(tempCalendarName == "")
                 .buttonStyle(FillButton())
                 .padding()
             }
