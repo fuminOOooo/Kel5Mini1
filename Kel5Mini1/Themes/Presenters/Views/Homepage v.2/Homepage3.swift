@@ -11,7 +11,7 @@ import CoreData
 
 struct Homepage3: View {
     
-    var HpVM : HomepageViewModel
+    @ObservedObject var HpVM : HomepageViewModel
     
     var body: some View {
         

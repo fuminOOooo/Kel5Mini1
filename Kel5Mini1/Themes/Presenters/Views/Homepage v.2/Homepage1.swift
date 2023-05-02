@@ -13,7 +13,7 @@ struct Homepage1: View {
     
     @StateObject var PnVM = ProposenewViewModel()
     
-    var HpVM : HomepageViewModel
+    @ObservedObject var HpVM : HomepageViewModel
     
     @State var calendarSelection: Bool = false
     
@@ -40,85 +40,85 @@ struct Homepage1: View {
                 }
                 .sheet(isPresented: $calendarSelection, content: {
                     
-                        VStack {
+                    VStack {
+                        
+                        HStack {
                             
-                            HStack {
-                                
-                                Spacer()
-                                
-                                Text("Families")
-                                    .font(Font.custom("Fredoka-Medium", size: 20))
-                                    .foregroundColor(Color("PB-800"))
-                                
-                                Spacer()
-                                
-                            }
-                            .padding()
+                            Spacer()
                             
-                            ScrollView {
-                                
-                                    ForEach(0..<HpVM.calendars.count) { i in
-                                        Button  {
-                                            print(HpVM.currentCalendar)
-                                            HpVM.currentCalendar = i
-                                            calendarSelection = false
-                                        } label: {
-                                            HStack {
-                                                
-                                                VStack {
-                                                    
-                                                    HStack {
-                                                        Text (HpVM.calendars[i].calendarName)
-                                                            .font(Font.custom("Fredoka-Medium", size: 20))
-                                                        Spacer()
-                                                    }
-                                                    
-                                                    HStack {
-                                                        Text("\(HpVM.calendars[i].calendarMembers.count) Member(s)")
-                                                            .font(Font.custom("Fredoka-Light", size: 16))
-                                                        Spacer()
-                                                    }
-                                                    
-                                                }
-                                                .padding(.leading)
-                                                
-                                                if (HpVM.currentCalendar == i) {
-                                                    VStack {
-                                                        Image(systemName: "checkmark")
-                                                            .bold()
-                                                            .padding(.trailing)
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        .frame(maxWidth: 340, minHeight: 80)
-                                        .background(HpVM.currentCalendar == i ? Color("PB-50") : Color(.white))
-                                        .cornerRadius(8)
-                                        .foregroundColor(Color("PB-800"))
-                                        .padding(.leading)
-                                        .padding(.trailing)
-                                        
-                                        if (HpVM.calendars.count != 1 && i < HpVM.calendars.count-1) {
-                                            Divider()
-                                                .frame(maxWidth: 340)
-                                        }
-                                        
-                                    }
-                                
-                            }
+                            Text("Families")
+                                .font(Font.custom("Fredoka-Medium", size: 20))
+                                .foregroundColor(Color("PB-800"))
                             
-                            Button {
-                                
-                            } label: {
-                                Text("+ Add another family calendar")
-                                    .font(Font.custom("Fredoka-Regular", size: 16))
-                                    .foregroundColor(Color("Secondary"))
-                            }
-
-                            
+                            Spacer()
                             
                         }
-                        .presentationDetents([.medium])
+                        .padding()
+                        
+                        ScrollView {
+                            
+                            ForEach(0..<HpVM.calendars.count) { i in
+                                Button  {
+                                    print(HpVM.currentCalendar)
+                                    HpVM.currentCalendar = i
+                                    calendarSelection = false
+                                } label: {
+                                    HStack {
+                                        
+                                        VStack {
+                                            
+                                            HStack {
+                                                Text (HpVM.calendars[i].calendarName)
+                                                    .font(Font.custom("Fredoka-Medium", size: 20))
+                                                Spacer()
+                                            }
+                                            
+                                            HStack {
+                                                Text("\(HpVM.calendars[i].calendarMembers.count) Member(s)")
+                                                    .font(Font.custom("Fredoka-Light", size: 16))
+                                                Spacer()
+                                            }
+                                            
+                                        }
+                                        .padding(.leading)
+                                        
+                                        if (HpVM.currentCalendar == i) {
+                                            VStack {
+                                                Image(systemName: "checkmark")
+                                                    .bold()
+                                                    .padding(.trailing)
+                                            }
+                                        }
+                                    }
+                                }
+                                .frame(maxWidth: 340, minHeight: 80)
+                                .background(HpVM.currentCalendar == i ? Color("PB-50") : Color(.white))
+                                .cornerRadius(8)
+                                .foregroundColor(Color("PB-800"))
+                                .padding(.leading)
+                                .padding(.trailing)
+                                
+                                if (HpVM.calendars.count != 1 && i < HpVM.calendars.count-1) {
+                                    Divider()
+                                        .frame(maxWidth: 340)
+                                }
+                                
+                            }
+                            
+                        }
+                        
+                        Button {
+                            
+                        } label: {
+                            Text("+ Add another family calendar")
+                                .font(Font.custom("Fredoka-Regular", size: 16))
+                                .foregroundColor(Color("Secondary"))
+                        }
+                        
+                        
+                        
+                    }
+                    .presentationDetents([.medium])
                     
                 })
                 
