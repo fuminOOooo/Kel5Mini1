@@ -42,12 +42,14 @@ struct Createcalendarpage2: View {
                     if (tempCalendarName == "") {
                         Text("Create Calendar")
                             .foregroundColor(.white)
-                            .frame(maxWidth: .infinity)
+                            .frame(maxWidth: .infinity, minHeight: 44)
+                            .background(Color("SO-100"))
                             .cornerRadius(6)
                             .font(Font.custom("Fredoka-Medium", size: 16))
                     } else {
                         Text("Create Calendar")
                             .foregroundColor(.white)
+                            .frame(maxWidth: .infinity, minHeight: 44)
                             .background(Color("Secondary"))
                             .cornerRadius(6)
                             .font(Font.custom("Fredoka-Medium", size: 16))
@@ -55,8 +57,8 @@ struct Createcalendarpage2: View {
                     }
                 }
                 .disabled(tempCalendarName == "")
-                .buttonStyle(FillButton())
-                .padding()
+                .padding(.leading)
+                .padding(.trailing)
             }
             
         }

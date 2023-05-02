@@ -59,19 +59,29 @@ struct Homepage1: View {
                             }
                             .padding()
                             
-//                            ScrollView {
-//                                
-//                                List {
-//                                    
-//                                    ForEach(HpVM.calendars, id: \.self) { calendars in
-//                                        
-//                                        Text(calendars.calendarName)
-//                                        
-//                                    }
-//                                    
-//                                }
-//                                
-//                            }
+                            ScrollView {
+                                
+                                List {
+                                    
+                                    ForEach(0..<HpVM.calendars.count) { calendars in
+                                        Button  {
+                                            
+                                        } label: {
+                                            HStack {
+                                                VStack {
+                                                    Text (HpVM.calendars[calendars].calendarName)
+                                                    Text("\(HpVM.calendars[calendars].calendarMembers.count) Member(s)")
+                                                }
+                                            }
+                                        }
+
+                                        
+                                        
+                                    }
+                                    
+                                }
+                                
+                            }
                             
                             Button {
                                 

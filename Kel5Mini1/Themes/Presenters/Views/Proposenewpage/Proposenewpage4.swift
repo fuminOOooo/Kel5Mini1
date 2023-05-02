@@ -43,9 +43,10 @@ struct Proposenewpage4: View {
                         .foregroundColor(.white)
                         .background(Color("Secondary"))
                         .bold()
+                        .frame(maxWidth: .infinity)
                 }
                 .buttonStyle(FillButton())
-                .padding()
+                .padding(.top)
                 
             }
             
