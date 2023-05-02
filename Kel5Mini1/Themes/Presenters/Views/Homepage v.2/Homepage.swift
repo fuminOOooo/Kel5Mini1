@@ -24,16 +24,18 @@ struct Homepage: View {
         animation: .default)
     private var items: FetchedResults<Item>
 
+    @StateObject var HpVM = HomepageViewModel()
+    
     var body:some View {
         
         NavigationView {
             
             VStack {
-                Homepage1()
+                Homepage1(HpVM: HpVM)
                 
-                Homepage2()
+                Homepage2(HpVM: HpVM)
             
-                Homepage3()
+                Homepage3(HpVM: HpVM)
                     .padding(.top)
                 
                 Spacer()
@@ -45,4 +47,10 @@ struct Homepage: View {
     }
 
     
+}
+
+struct Home_Previews: PreviewProvider {
+    static var previews: some View {
+        Homepage().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    }
 }

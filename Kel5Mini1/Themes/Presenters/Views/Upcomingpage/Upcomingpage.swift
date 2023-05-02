@@ -39,6 +39,6 @@ struct Upcoming: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        Upcoming().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        Homepage().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
     }
 }

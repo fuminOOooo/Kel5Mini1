@@ -11,7 +11,7 @@ import CoreData
 
 struct Homepage3: View {
     
-    @State var temporaryUsers: [String] = ["Hai", "Halo", "Hey", "Hello", "Ola"]
+    var HpVM : HomepageViewModel
     
     var body: some View {
         
@@ -123,7 +123,7 @@ struct Homepage3: View {
                             HStack {
                                 
                                 // "temporaryUsers" SHOULD BE CHANGABLE
-                                ForEach (0 ..< temporaryUsers.count) { users in
+                                ForEach (0 ..< HpVM.calendars.count) { users in
                                     if (users < 3) {
                                         Image(systemName: "person.crop.circle.badge.clock.fill")
                                             .font(Font.custom("Fredoka-Medium", size: 20))
@@ -134,8 +134,8 @@ struct Homepage3: View {
                             }
                             
                             // "temporaryUsers" SHOULD BE CHANGABLE
-                            if (temporaryUsers.count > 3) {
-                                Text("+\(temporaryUsers.count-3)")
+                            if (HpVM.calendars[HpVM.currentCalendar].calendarMembers.count > 3) {
+                                Text("+\(HpVM.calendars[HpVM.currentCalendar].calendarMembers.count-3)")
                                     .font(Font.custom("Fredoka-Medium", size: 12))
                                     .foregroundColor(Color("PB-300"))
                             }

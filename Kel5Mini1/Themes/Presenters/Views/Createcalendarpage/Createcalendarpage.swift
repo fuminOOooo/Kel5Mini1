@@ -43,8 +43,3 @@ struct Createcalendarpage: View {
 }
 
 
-struct Home_Previews: PreviewProvider {
-    static var previews: some View {
-        Createcalendarpage().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
-    }
-}

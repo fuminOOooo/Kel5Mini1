@@ -13,6 +13,8 @@ struct Proposenewpage1: View {
     
     @State var temporaryUsers: [String] = ["Hai", "Halo", "Hey", "Hello", "Ola"]
     
+    @Environment(\.dismiss) private var dismiss
+    
     var body: some View {
         VStack (spacing: 4) {
             
@@ -21,9 +23,9 @@ struct Proposenewpage1: View {
         .toolbar {
             
             ToolbarItem(placement: .navigationBarLeading) {
-                    
-                    NavigationLink {
-                        Homepage()
+                
+                    Button {
+                        dismiss()
                     } label: {
                         Image(systemName: "chevron.left")
                             .font(Font.custom("Fredoka-Bold", size: 14))

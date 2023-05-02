@@ -13,7 +13,7 @@ struct Homepage1: View {
     
     @StateObject var PnVM = ProposenewViewModel()
     
-    @StateObject var HpVM = HomepageViewModel()
+    var HpVM : HomepageViewModel
     
     @State var calendarSelection: Bool = false
     
@@ -25,12 +25,10 @@ struct Homepage1: View {
                 
                 // Calendar Name
                 Button {
-                    // SHOULD NAVIGATE TO CALENDARS MODAL
                     calendarSelection.toggle()
                     
                 } label: {
                     
-                    // "Mitun's Family" SHOULD BE CHANGABLE
                     Text(HpVM.calendars[HpVM.currentCalendar].calendarName)
                         .font(Font.custom("Fredoka-Bold", size: 26))
                         .foregroundColor(Color("PB-800"))
@@ -42,8 +40,6 @@ struct Homepage1: View {
                 }
                 .sheet(isPresented: $calendarSelection, content: {
                     
-                    GeometryReader { geometry in
-                        
                         VStack {
                             
                             HStack {
@@ -61,25 +57,53 @@ struct Homepage1: View {
                             
                             ScrollView {
                                 
-                                List {
-                                    
-                                    ForEach(0..<HpVM.calendars.count) { calendars in
+                                    ForEach(0..<HpVM.calendars.count) { i in
                                         Button  {
-                                            
+                                            print(HpVM.currentCalendar)
+                                            HpVM.currentCalendar = i
+                                            calendarSelection = false
                                         } label: {
                                             HStack {
+                                                
                                                 VStack {
-                                                    Text (HpVM.calendars[calendars].calendarName)
-                                                    Text("\(HpVM.calendars[calendars].calendarMembers.count) Member(s)")
+                                                    
+                                                    HStack {
+                                                        Text (HpVM.calendars[i].calendarName)
+                                                            .font(Font.custom("Fredoka-Medium", size: 20))
+                                                        Spacer()
+                                                    }
+                                                    
+                                                    HStack {
+                                                        Text("\(HpVM.calendars[i].calendarMembers.count) Member(s)")
+                                                            .font(Font.custom("Fredoka-Light", size: 16))
+                                                        Spacer()
+                                                    }
+                                                    
+                                                }
+                                                .padding(.leading)
+                                                
+                                                if (HpVM.currentCalendar == i) {
+                                                    VStack {
+                                                        Image(systemName: "checkmark")
+                                                            .bold()
+                                                            .padding(.trailing)
+                                                    }
                                                 }
                                             }
                                         }
-
+                                        .frame(maxWidth: 340, minHeight: 80)
+                                        .background(HpVM.currentCalendar == i ? Color("PB-50") : Color(.white))
+                                        .cornerRadius(8)
+                                        .foregroundColor(Color("PB-800"))
+                                        .padding(.leading)
+                                        .padding(.trailing)
                                         
+                                        if (HpVM.calendars.count != 1 && i < HpVM.calendars.count-1) {
+                                            Divider()
+                                                .frame(maxWidth: 340)
+                                        }
                                         
                                     }
-                                    
-                                }
                                 
                             }
                             
@@ -95,7 +119,6 @@ struct Homepage1: View {
                             
                         }
                         .presentationDetents([.medium])
-                    }
                     
                 })
                 

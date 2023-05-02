@@ -11,7 +11,7 @@ import CoreData
 
 struct Homepage2: View {
     
-    @State var temporaryUsers: [String] = ["Hai", "Halo", "Hey", "Hello", "Ola"]
+    var HpVM : HomepageViewModel
     
     var body: some View {
         VStack{
