@@ -21,9 +21,9 @@ class HomepageViewModel: ObservableObject {
     }
     
     @Published var calendars: [oneCalendar] = [
-        oneCalendar(calendarName: "Mitun's Family", calendarOwner: "Mitun", calendarMembers: ["Hai", "Halo"]),
-        oneCalendar(calendarName: "Dary's Family", calendarOwner: "Dary", calendarMembers: ["Hai", "Halo", "Hey"]),
-        oneCalendar(calendarName: "Elvis's Family", calendarOwner: "Elvis", calendarMembers: ["Hai", "Halo", "Hey", "Hello", "Ola"])
+        oneCalendar(calendarName: "Mitun's Family", calendarOwner: "Mitun", calendarMembers: ["Hai", "Halo", "hey"]),
+        oneCalendar(calendarName: "Dary's Family", calendarOwner: "Dary", calendarMembers: ["Hai", "Halo", "Hey", "fak"]),
+        oneCalendar(calendarName: "Elvis's Family", calendarOwner: "Elvis", calendarMembers: ["Hai", "Halo"])
     ]
     
     

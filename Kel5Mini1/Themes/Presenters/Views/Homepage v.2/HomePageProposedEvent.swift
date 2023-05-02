@@ -118,12 +118,14 @@ struct HomePageProposedEvent: View {
                     // Component 6.6
                     HStack {
                         Button {
+                            
                             // SHOULD NAVIGATE TO MEMBER DETAILS
+                            
+                            
                         } label: {
                             HStack {
                                 
-                                // "temporaryUsers" SHOULD BE CHANGABLE
-                                ForEach (0 ..< HpVM.calendars.count) { users in
+                                ForEach (0 ..< HpVM.calendars[HpVM.currentCalendar].calendarMembers.count) { users in
                                     if (users < 3) {
                                         Image(systemName: "person.crop.circle.badge.clock.fill")
                                             .font(Font.custom("Fredoka-Medium", size: 20))

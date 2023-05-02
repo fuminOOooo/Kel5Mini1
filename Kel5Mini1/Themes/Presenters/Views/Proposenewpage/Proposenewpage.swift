@@ -10,7 +10,7 @@ import CoreData
 
 struct Proposenewpage: View {
     
-    var VM: ProposenewViewModel
+    var PnVM: ProposenewViewModel
     
     @Environment(\.managedObjectContext) private var viewContext
 
@@ -23,15 +23,15 @@ struct Proposenewpage: View {
         
             VStack {
                 
-                ProposeNewEventBackButton(VM: VM)
+                ProposeNewEventBackButton(PnVM: PnVM)
                 
-                ProposeNewEventDatePicker(VM: VM)
+                ProposeNewEventDatePicker(PnVM: PnVM)
                 
-                ProposeNewTextFields(VM: VM)
+                ProposeNewTextFields(PnVM: PnVM)
                 
-                ProposeNewStartTime(VM: VM)
+                ProposeNewStartTime(PnVM: PnVM)
                 
-                ProposeNewProposalButton(VM: VM)
+                ProposeNewProposalButton(PnVM: PnVM)
                 
                 Spacer()
                 

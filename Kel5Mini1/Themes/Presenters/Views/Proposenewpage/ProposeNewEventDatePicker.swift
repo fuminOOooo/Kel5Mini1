@@ -13,7 +13,7 @@ struct ProposeNewEventDatePicker: View {
     
     @State var viewSelectedDate: Date = Date()
     @State var temporaryUsers: [String] = ["Hai", "Halo", "Hey", "Hello", "Ola"]
-    var VM : ProposenewViewModel
+    @ObservedObject var PnVM : ProposenewViewModel
     
     var body: some View {
         VStack () {
@@ -22,8 +22,8 @@ struct ProposeNewEventDatePicker: View {
             DatePicker("Select a date", selection: $viewSelectedDate, in: Date()..., displayedComponents: .date)
                 .datePickerStyle(.graphical)
                 .onChange(of: viewSelectedDate) { newValue in
-                    VM.selectedDate = newValue
-                    print(VM.selectedDate)
+                    PnVM.selectedDate = newValue
+                    print(PnVM.selectedDate)
                 }
                 .padding()
             

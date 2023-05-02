@@ -14,7 +14,8 @@ struct ProposeNewProposalButton: View {
     @State var temporarySelectedTime = Date()
     
     @State var temporaryUsers: [String] = ["Hai", "Halo", "Hey", "Hello", "Ola"]
-    var VM : ProposenewViewModel
+    
+    @ObservedObject var PnVM : ProposenewViewModel
     
     var body: some View {
         VStack () {

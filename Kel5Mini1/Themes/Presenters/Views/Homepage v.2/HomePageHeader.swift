@@ -11,7 +11,7 @@ import CoreData
 
 struct HomePageHeader: View {
     
-    @StateObject var PnVM = ProposenewViewModel()
+    @ObservedObject var PnVM = ProposenewViewModel()
     
     @ObservedObject var HpVM : HomepageViewModel
     
@@ -25,6 +25,7 @@ struct HomePageHeader: View {
                 
                 // Calendar Name
                 Button {
+                    
                     calendarSelection.toggle()
                     
                 } label: {
@@ -59,9 +60,10 @@ struct HomePageHeader: View {
                             
                             ForEach(0..<HpVM.calendars.count) { i in
                                 Button  {
-                                    print(HpVM.currentCalendar)
+                                    
                                     HpVM.currentCalendar = i
-                                    calendarSelection = false
+                                    calendarSelection.toggle()
+                                    
                                 } label: {
                                     HStack {
                                         
@@ -126,7 +128,7 @@ struct HomePageHeader: View {
                 
                 //Add Calendar Button
                 NavigationLink {
-                    Proposenewpage(VM: PnVM)
+                    Proposenewpage(PnVM: PnVM)
                 } label: {
                     Image(systemName: "plus")
                         .font(Font.custom("Fredoka-Bold", size: 24))
@@ -140,21 +142,21 @@ struct HomePageHeader: View {
             //Component 2
             HStack {
                 
-                
                 Button {
+                    
                     // SHOULD NAVIGATE TO MEMBER DETAILS
+                    
+                    
                 } label: {
                     HStack (spacing: -2) {
                         
-                        // "temporaryUsers" SHOULD BE CHANGABLE
                         ForEach (0 ..< HpVM.calendars[HpVM.currentCalendar].calendarMembers.count) { users in
-                            if (users < 3) {
-                                Image(systemName: "person.circle.fill")
-                                    .resizable()
-                                    .frame(width: 25, height: 25)
-                                    .foregroundColor(.white)
-                                    .shadow(radius: 3)
-                            }
+                            Image(systemName: "person.circle.fill")
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                                .foregroundColor(.white)
+                                .shadow(radius: 3)
+                            
                         }
                     }
                     

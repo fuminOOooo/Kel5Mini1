@@ -12,7 +12,7 @@ import CoreData
 struct ProposeNewTextFields: View {
     
     @State var temporaryUsers: [String] = ["Hai", "Halo", "Hey", "Hello", "Ola"]
-    var VM : ProposenewViewModel
+    @ObservedObject var PnVM : ProposenewViewModel
     @State var tempEventName: String = ""
     @State var tempDescription: String = ""
     

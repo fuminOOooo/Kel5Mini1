@@ -11,9 +11,7 @@ import CoreData
 
 struct ProposeNewEventBackButton: View {
     
-    @State var temporaryUsers: [String] = ["Hai", "Halo", "Hey", "Hello", "Ola"]
-    
-    var VM : ProposenewViewModel
+    @ObservedObject var PnVM : ProposenewViewModel
     
     @Environment(\.dismiss) private var dismiss
     
