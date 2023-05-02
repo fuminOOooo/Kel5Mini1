@@ -2,14 +2,14 @@
 //  Homepage1.swift
 //  Kel5Mini1
 //
-//  Created by Elvis Susanto on 28/04/23.
+//  Created by Elvis Susanto on 02/05/23.
 //
 
 import Foundation
 import SwiftUI
 import CoreData
 
-struct Proposenewpage4: View {
+struct ProposeNewProposalButton: View {
     
     @State var temporarySelectedTime = Date()
     
@@ -18,22 +18,7 @@ struct Proposenewpage4: View {
     
     var body: some View {
         VStack () {
-            
-            HStack() {
-                
-                Image(systemName: "clock")
-                    .bold()
-                Text("Start time")
-                    .font(.subheadline)
-                    .bold()
-                
-                Spacer()
-                
-                DatePicker("", selection: $temporarySelectedTime, displayedComponents: .hourAndMinute)
-                            .labelsHidden()
-                
-            }
-            
+
             HStack {
                 
                 Button {

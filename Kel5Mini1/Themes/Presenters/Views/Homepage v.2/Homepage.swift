@@ -31,11 +31,11 @@ struct Homepage: View {
         NavigationView {
             
             VStack {
-                Homepage1(HpVM: HpVM)
+                HomePageHeader(HpVM: HpVM)
                 
-                Homepage2(HpVM: HpVM)
+                HomePageUpcomingEvent(HpVM: HpVM)
             
-                Homepage3(HpVM: HpVM)
+                HomePageProposedEvent(HpVM: HpVM)
                     .padding(.top)
                 
                 Spacer()

@@ -23,13 +23,15 @@ struct Proposenewpage: View {
         
             VStack {
                 
-                Proposenewpage1()
+                ProposeNewEventBackButton(VM: VM)
                 
-                Proposenewpage2(VM: VM)
+                ProposeNewEventDatePicker(VM: VM)
                 
-                Proposenewpage3(VM: VM)
+                ProposeNewTextFields(VM: VM)
                 
-                Proposenewpage4(VM: VM)
+                ProposeNewStartTime(VM: VM)
+                
+                ProposeNewProposalButton(VM: VM)
                 
                 Spacer()
                 

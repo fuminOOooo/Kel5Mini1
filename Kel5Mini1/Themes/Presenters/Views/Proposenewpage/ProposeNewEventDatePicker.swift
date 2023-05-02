@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import CoreData
 
-struct Proposenewpage2: View {
+struct ProposeNewEventDatePicker: View {
     
     @State var viewSelectedDate: Date = Date()
     @State var temporaryUsers: [String] = ["Hai", "Halo", "Hey", "Hello", "Ola"]

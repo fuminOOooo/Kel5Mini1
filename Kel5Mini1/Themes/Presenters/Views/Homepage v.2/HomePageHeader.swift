@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import CoreData
 
-struct Homepage1: View {
+struct HomePageHeader: View {
     
     @StateObject var PnVM = ProposenewViewModel()
     

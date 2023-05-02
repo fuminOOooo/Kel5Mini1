@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import CoreData
 
-struct Homepage2: View {
+struct HomePageUpcomingEvent: View {
     
     @ObservedObject var HpVM : HomepageViewModel
     

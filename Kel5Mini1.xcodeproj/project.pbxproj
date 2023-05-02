@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1551941B29FB931400A31780 /* Proposenewpage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551941A29FB931400A31780 /* Proposenewpage2.swift */; };
+		1551941B29FB931400A31780 /* ProposeNewEventDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551941A29FB931400A31780 /* ProposeNewEventDatePicker.swift */; };
 		1551941E29FB939E00A31780 /* Proposenew Viewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551941D29FB939E00A31780 /* Proposenew Viewmodel.swift */; };
-		1551942029FB9DAA00A31780 /* Proposenewpage3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551941F29FB9DAA00A31780 /* Proposenewpage3.swift */; };
-		1551942229FBC73D00A31780 /* Proposenewpage4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551942129FBC73D00A31780 /* Proposenewpage4.swift */; };
+		1551942029FB9DAA00A31780 /* ProposeNewTextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551941F29FB9DAA00A31780 /* ProposeNewTextFields.swift */; };
+		1551942229FBC73D00A31780 /* ProposeNewStartTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551942129FBC73D00A31780 /* ProposeNewStartTime.swift */; };
 		1551942429FC417100A31780 /* Homepage Viewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551942329FC417100A31780 /* Homepage Viewmodel.swift */; };
 		1551942829FCEE1500A31780 /* Homepage Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551942729FCEE1500A31780 /* Homepage Model.swift */; };
 		1551942B29FD72A600A31780 /* Createcalendarpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551942A29FD72A600A31780 /* Createcalendarpage.swift */; };
@@ -18,6 +18,7 @@
 		1551942F29FD75BE00A31780 /* Createnewcalendar Viewmodel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551942E29FD75BE00A31780 /* Createnewcalendar Viewmodel.swift */; };
 		1551943129FE4EE800A31780 /* Createcalendarpage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1551943029FE4EE800A31780 /* Createcalendarpage2.swift */; };
 		155194332A003F4600A31780 /* Createcalendarpage3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155194322A003F4600A31780 /* Createcalendarpage3.swift */; };
+		155194352A0129DE00A31780 /* ProposeNewProposalButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155194342A0129DE00A31780 /* ProposeNewProposalButton.swift */; };
 		157EB61529EFA79F0056F675 /* Kel5Mini1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EB61429EFA79F0056F675 /* Kel5Mini1App.swift */; };
 		157EB61729EFA79F0056F675 /* Homepage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EB61629EFA79F0056F675 /* Homepage.swift */; };
 		157EB61929EFA7A00056F675 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 157EB61829EFA7A00056F675 /* Assets.xcassets */; };
@@ -27,9 +28,9 @@
 		157EB62B29EFA7A00056F675 /* Kel5Mini1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EB62A29EFA7A00056F675 /* Kel5Mini1Tests.swift */; };
 		157EB63529EFA7A00056F675 /* Kel5Mini1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EB63429EFA7A00056F675 /* Kel5Mini1UITests.swift */; };
 		157EB63729EFA7A00056F675 /* Kel5Mini1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157EB63629EFA7A00056F675 /* Kel5Mini1UITestsLaunchTests.swift */; };
-		15BF953B29F2F80900CA517E /* Homepage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF953A29F2F80900CA517E /* Homepage1.swift */; };
-		15BF953D29F31AF900CA517E /* Homepage2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF953C29F31AF900CA517E /* Homepage2.swift */; };
-		15BF953F29F333F700CA517E /* Homepage3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF953E29F333F700CA517E /* Homepage3.swift */; };
+		15BF953B29F2F80900CA517E /* HomePageHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF953A29F2F80900CA517E /* HomePageHeader.swift */; };
+		15BF953D29F31AF900CA517E /* HomePageUpcomingEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF953C29F31AF900CA517E /* HomePageUpcomingEvent.swift */; };
+		15BF953F29F333F700CA517E /* HomePageProposedEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF953E29F333F700CA517E /* HomePageProposedEvent.swift */; };
 		15BF954129F7DD2000CA517E /* Upcomingpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF954029F7DD2000CA517E /* Upcomingpage.swift */; };
 		15BF954429F7DEF600CA517E /* Upcoming1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BF954329F7DEF600CA517E /* Upcoming1.swift */; };
 		15D975C829F90E620033D857 /* Upcoming2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975C729F90E620033D857 /* Upcoming2.swift */; };
@@ -37,7 +38,7 @@
 		15D975CD29F9380D0033D857 /* Proposed1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975CC29F9380D0033D857 /* Proposed1.swift */; };
 		15D975CF29F938300033D857 /* Proposed2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975CE29F938300033D857 /* Proposed2.swift */; };
 		15D975D229F9413E0033D857 /* Proposenewpage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975D129F9413E0033D857 /* Proposenewpage.swift */; };
-		15D975D429F9417A0033D857 /* Proposenewpage1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975D329F9417A0033D857 /* Proposenewpage1.swift */; };
+		15D975D429F9417A0033D857 /* ProposeNewEventBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D975D329F9417A0033D857 /* ProposeNewEventBackButton.swift */; };
 		382123FE29FAE83C003B5002 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 382123FD29FAE83C003B5002 /* CustomButton.swift */; };
 		382123FF29FAEF10003B5002 /* Fredoka.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 382123FB29FAD58D003B5002 /* Fredoka.ttf */; };
 /* End PBXBuildFile section */
@@ -60,10 +61,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1551941A29FB931400A31780 /* Proposenewpage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage2.swift; sourceTree = "<group>"; };
+		1551941A29FB931400A31780 /* ProposeNewEventDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposeNewEventDatePicker.swift; sourceTree = "<group>"; };
 		1551941D29FB939E00A31780 /* Proposenew Viewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Proposenew Viewmodel.swift"; sourceTree = "<group>"; };
-		1551941F29FB9DAA00A31780 /* Proposenewpage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage3.swift; sourceTree = "<group>"; };
-		1551942129FBC73D00A31780 /* Proposenewpage4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage4.swift; sourceTree = "<group>"; };
+		1551941F29FB9DAA00A31780 /* ProposeNewTextFields.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposeNewTextFields.swift; sourceTree = "<group>"; };
+		1551942129FBC73D00A31780 /* ProposeNewStartTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposeNewStartTime.swift; sourceTree = "<group>"; };
 		1551942329FC417100A31780 /* Homepage Viewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Homepage Viewmodel.swift"; sourceTree = "<group>"; };
 		1551942729FCEE1500A31780 /* Homepage Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Homepage Model.swift"; sourceTree = "<group>"; };
 		1551942A29FD72A600A31780 /* Createcalendarpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Createcalendarpage.swift; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 		1551942E29FD75BE00A31780 /* Createnewcalendar Viewmodel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Createnewcalendar Viewmodel.swift"; sourceTree = "<group>"; };
 		1551943029FE4EE800A31780 /* Createcalendarpage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Createcalendarpage2.swift; sourceTree = "<group>"; };
 		155194322A003F4600A31780 /* Createcalendarpage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Createcalendarpage3.swift; sourceTree = "<group>"; };
+		155194342A0129DE00A31780 /* ProposeNewProposalButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposeNewProposalButton.swift; sourceTree = "<group>"; };
 		157EB61129EFA79F0056F675 /* Kel5Mini1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kel5Mini1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		157EB61429EFA79F0056F675 /* Kel5Mini1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kel5Mini1App.swift; sourceTree = "<group>"; };
 		157EB61629EFA79F0056F675 /* Homepage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage.swift; sourceTree = "<group>"; };
@@ -83,9 +85,9 @@
 		157EB63029EFA7A00056F675 /* Kel5Mini1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Kel5Mini1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		157EB63429EFA7A00056F675 /* Kel5Mini1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kel5Mini1UITests.swift; sourceTree = "<group>"; };
 		157EB63629EFA7A00056F675 /* Kel5Mini1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kel5Mini1UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		15BF953A29F2F80900CA517E /* Homepage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage1.swift; sourceTree = "<group>"; };
-		15BF953C29F31AF900CA517E /* Homepage2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage2.swift; sourceTree = "<group>"; };
-		15BF953E29F333F700CA517E /* Homepage3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homepage3.swift; sourceTree = "<group>"; };
+		15BF953A29F2F80900CA517E /* HomePageHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageHeader.swift; sourceTree = "<group>"; };
+		15BF953C29F31AF900CA517E /* HomePageUpcomingEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageUpcomingEvent.swift; sourceTree = "<group>"; };
+		15BF953E29F333F700CA517E /* HomePageProposedEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageProposedEvent.swift; sourceTree = "<group>"; };
 		15BF954029F7DD2000CA517E /* Upcomingpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upcomingpage.swift; sourceTree = "<group>"; };
 		15BF954329F7DEF600CA517E /* Upcoming1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upcoming1.swift; sourceTree = "<group>"; };
 		15D975C729F90E620033D857 /* Upcoming2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Upcoming2.swift; sourceTree = "<group>"; };
@@ -93,7 +95,7 @@
 		15D975CC29F9380D0033D857 /* Proposed1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposed1.swift; sourceTree = "<group>"; };
 		15D975CE29F938300033D857 /* Proposed2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposed2.swift; sourceTree = "<group>"; };
 		15D975D129F9413E0033D857 /* Proposenewpage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage.swift; sourceTree = "<group>"; };
-		15D975D329F9417A0033D857 /* Proposenewpage1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Proposenewpage1.swift; sourceTree = "<group>"; };
+		15D975D329F9417A0033D857 /* ProposeNewEventBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposeNewEventBackButton.swift; sourceTree = "<group>"; };
 		382123FB29FAD58D003B5002 /* Fredoka.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Fredoka.ttf; sourceTree = "<group>"; };
 		382123FD29FAE83C003B5002 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		38250DE129FA67380021746F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Kel5Mini1/Info.plist; sourceTree = SOURCE_ROOT; };
@@ -264,9 +266,9 @@
 			isa = PBXGroup;
 			children = (
 				157EB61629EFA79F0056F675 /* Homepage.swift */,
-				15BF953A29F2F80900CA517E /* Homepage1.swift */,
-				15BF953C29F31AF900CA517E /* Homepage2.swift */,
-				15BF953E29F333F700CA517E /* Homepage3.swift */,
+				15BF953A29F2F80900CA517E /* HomePageHeader.swift */,
+				15BF953C29F31AF900CA517E /* HomePageUpcomingEvent.swift */,
+				15BF953E29F333F700CA517E /* HomePageProposedEvent.swift */,
 			);
 			path = "Homepage v.2";
 			sourceTree = "<group>";
@@ -295,10 +297,11 @@
 			isa = PBXGroup;
 			children = (
 				15D975D129F9413E0033D857 /* Proposenewpage.swift */,
-				15D975D329F9417A0033D857 /* Proposenewpage1.swift */,
-				1551941A29FB931400A31780 /* Proposenewpage2.swift */,
-				1551941F29FB9DAA00A31780 /* Proposenewpage3.swift */,
-				1551942129FBC73D00A31780 /* Proposenewpage4.swift */,
+				15D975D329F9417A0033D857 /* ProposeNewEventBackButton.swift */,
+				1551941A29FB931400A31780 /* ProposeNewEventDatePicker.swift */,
+				1551941F29FB9DAA00A31780 /* ProposeNewTextFields.swift */,
+				1551942129FBC73D00A31780 /* ProposeNewStartTime.swift */,
+				155194342A0129DE00A31780 /* ProposeNewProposalButton.swift */,
 			);
 			path = Proposenewpage;
 			sourceTree = "<group>";
@@ -442,31 +445,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1551942029FB9DAA00A31780 /* Proposenewpage3.swift in Sources */,
-				15D975D429F9417A0033D857 /* Proposenewpage1.swift in Sources */,
+				1551942029FB9DAA00A31780 /* ProposeNewTextFields.swift in Sources */,
+				15D975D429F9417A0033D857 /* ProposeNewEventBackButton.swift in Sources */,
 				157EB61E29EFA7A00056F675 /* Persistence.swift in Sources */,
-				15BF953D29F31AF900CA517E /* Homepage2.swift in Sources */,
+				15BF953D29F31AF900CA517E /* HomePageUpcomingEvent.swift in Sources */,
 				1551942829FCEE1500A31780 /* Homepage Model.swift in Sources */,
 				1551942F29FD75BE00A31780 /* Createnewcalendar Viewmodel.swift in Sources */,
 				155194332A003F4600A31780 /* Createcalendarpage3.swift in Sources */,
+				155194352A0129DE00A31780 /* ProposeNewProposalButton.swift in Sources */,
 				15D975CB29F933170033D857 /* Proposedpage.swift in Sources */,
 				382123FE29FAE83C003B5002 /* CustomButton.swift in Sources */,
 				1551942429FC417100A31780 /* Homepage Viewmodel.swift in Sources */,
 				1551942D29FD72F800A31780 /* Createcalendarpage1.swift in Sources */,
 				1551941E29FB939E00A31780 /* Proposenew Viewmodel.swift in Sources */,
-				1551942229FBC73D00A31780 /* Proposenewpage4.swift in Sources */,
-				1551941B29FB931400A31780 /* Proposenewpage2.swift in Sources */,
+				1551942229FBC73D00A31780 /* ProposeNewStartTime.swift in Sources */,
+				1551941B29FB931400A31780 /* ProposeNewEventDatePicker.swift in Sources */,
 				1551943129FE4EE800A31780 /* Createcalendarpage2.swift in Sources */,
 				1551942B29FD72A600A31780 /* Createcalendarpage.swift in Sources */,
 				157EB62129EFA7A00056F675 /* Kel5Mini1.xcdatamodeld in Sources */,
 				15D975D229F9413E0033D857 /* Proposenewpage.swift in Sources */,
-				15BF953F29F333F700CA517E /* Homepage3.swift in Sources */,
+				15BF953F29F333F700CA517E /* HomePageProposedEvent.swift in Sources */,
 				15BF954429F7DEF600CA517E /* Upcoming1.swift in Sources */,
 				15D975CD29F9380D0033D857 /* Proposed1.swift in Sources */,
 				15BF954129F7DD2000CA517E /* Upcomingpage.swift in Sources */,
 				157EB61729EFA79F0056F675 /* Homepage.swift in Sources */,
 				157EB61529EFA79F0056F675 /* Kel5Mini1App.swift in Sources */,
-				15BF953B29F2F80900CA517E /* Homepage1.swift in Sources */,
+				15BF953B29F2F80900CA517E /* HomePageHeader.swift in Sources */,
 				15D975CF29F938300033D857 /* Proposed2.swift in Sources */,
 				15D975C829F90E620033D857 /* Upcoming2.swift in Sources */,
 			);

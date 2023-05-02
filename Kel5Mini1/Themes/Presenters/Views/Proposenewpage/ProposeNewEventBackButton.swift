@@ -9,9 +9,11 @@ import Foundation
 import SwiftUI
 import CoreData
 
-struct Proposenewpage1: View {
+struct ProposeNewEventBackButton: View {
     
     @State var temporaryUsers: [String] = ["Hai", "Halo", "Hey", "Hello", "Ola"]
+    
+    var VM : ProposenewViewModel
     
     @Environment(\.dismiss) private var dismiss
     
